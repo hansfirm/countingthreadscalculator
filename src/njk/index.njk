@@ -1,0 +1,27 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Index page title{% endblock %}
+
+{% block page_description %}The index search description for this page goes here.{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div id ="introSlide">
+    <div id="title">
+    <h1 id="head">How does your fashion taste hurt the planet?</h1>
+    <p id="subhead">Our advanced calculator combines A.I. with your shopping habits to determine your fashion footprint.</p>
+    </div>
+    <a href="./calc.html"><button class="button">Find Out</button></a>
+    <br><br>
+    </div>
+  
+<div id="credits">
+  <div id ="creditsLeft">
+    <p>A project by <span id="creditsName">NAME</span></span></p>
+  </div>
+  <div id="creditsRight">
+  <p>A program by <a target="_blank" href="https://twitter.com/hansfirm">Hayden Baggett</a></p>
+  <p id="creditsRight">Questions? Shoot a message <a href="mailto:baggetthayden@yahoo.com?subject=Calculator Feedback">here</a>.</p>
+  </div>
+</div>
+{% endblock %}
