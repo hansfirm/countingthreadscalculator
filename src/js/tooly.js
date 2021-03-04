@@ -258,7 +258,19 @@ function outputEverything() {
     userFinalEmits = userInitEmits - emitsReimbursement;
     roadTrips = userFinalEmits/377;
     document.getElementById("carbon").innerHTML = Math.round(userFinalEmits);
-    document.getElementById("roadTrips").innerHTML = Math.round(roadTrips);
+
+    if (Math.round(roadTrips)==1){
+      document.getElementById("roadTrips").innerHTML = Math.round(roadTrips);
+      document.getElementById("roadTripsVerbage").innerHTML = "road trip";
+    }
+    else if (Math.round(roadTrips)==0){
+      document.getElementById("roadTrips").innerHTML = roadTrips.toFixed(2);
+      document.getElementById("roadTripsVerbage").innerHTML = "road trips";
+    }
+    else{
+      document.getElementById("roadTrips").innerHTML = Math.round(roadTrips);
+      document.getElementById("roadTripsVerbage").innerHTML = "road trips";
+    }    
 
     showers = Math.round(water/17);
     document.getElementById("showers").innerHTML = showers;
