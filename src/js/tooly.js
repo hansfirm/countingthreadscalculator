@@ -1,3 +1,5 @@
+
+
 var horas = new Date().getHours();
 if (horas >= 0 && horas < 12)
     {var relativeTime = "morning";}
@@ -262,3 +264,4 @@ function outputEverything() {
     document.getElementById("showers").innerHTML = showers;
 
 }
+
