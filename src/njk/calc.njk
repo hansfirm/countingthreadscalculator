@@ -1,7 +1,7 @@
 
 {% extends '_templates/base.njk' %}
 
-{% block page_title %}Index page title{% endblock %}
+{% block page_title %}Fashion Footprint Calculator{% endblock %}
 
 {% block page_description %}The index search description for this page goes here.{% endblock %}
 
@@ -28,7 +28,7 @@
 
   <div>
     <p>2. What brands or shops do you buy from? (Select all that apply)</p>
-    <form id = "brands" action="/action_page.php">
+    <form id = "brands">
       <input type="checkbox" id="vehicle1" name="vehicle1" value="Adidas">
       <label for="vehicle1">Adidas</label>
       <input type="checkbox" id="vehicle2" name="vehicle2" value="Calvin Klein">
@@ -103,7 +103,7 @@
 
   <div>
     <p>7. If you buy from fast-fashion brands (e.g., Zara, Shein, H&M, Fashion Nova, etc.), what is your motivation? (Select all that apply)</p>
-    <form action="/action_page.php">
+    <form>
       <input type="checkbox" id="vehicle16" name="vehicle16" value="Price">
       <label for="vehicle16">Price</label>
       <input type="checkbox" id="vehicle17" name="vehicle17" value="Speed/Availability">

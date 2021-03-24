@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
-  <!-- A Intro to Coding for Journalists class project -->
+  <!-- A Digital Innovations Capstone class project -->
   <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    </style>
     <title>{% block page_title %}Default title{% endblock %}</title>
     <meta name="description" content="{% block page_description %}Default description{% endblock %}">
     <meta charset="utf-8">
@@ -10,11 +13,8 @@
     <link rel="stylesheet" href="{{ relative_path }}css/main.css">
   </head>
   <body>
-    {% include "_includes/nav.njk" %}
-
     {% block content %}{% endblock %}
 
-    {% include "_includes/footer.njk" %}
 
     <script src="{{ relative_path }}js/jquery.js"></script>
     <script src="{{ relative_path }}js/popper.js"></script>

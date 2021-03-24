@@ -1,26 +1,253 @@
-// Custom variable overrides
-// See node_modules/bootstrap/scss/_variables.scss
+/*@import "../node_modules/rfs/scss";
 
-// $body-bg: black;
-// $body-color: white;
-// $link-hover-color: grey;
-// $font-family-sans-serif: "Helvetica Neue";
+.head {
+  @include font-size(9rem);
+}*/
 
-/* bootstrap */
-// Option A: Include all of Bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap";
+*{
+   margin: 0;
+   padding: 0;
+}
 
-// Option B: Include parts of Bootstrap
-// See https://getbootstrap.com/docs/4.1/getting-started/theming/#importing
+body{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 
-// Required
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/mixins"; 
+.head{
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 5%;
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+max-height: 18%;
+font-size: 5vw;
+}
 
-// Import partials
-@import "nav";
+.subHead{
+  font-family:'Inconsolata',monospace;
+  font-size: 1.4rem;
+  text-align:center;
+  margin-left: 22%;
+  margin-right: 22%;
+  margin-top: 5%;
+}
 
-h3 {
-  font-size: 1.5rem;
+.button{padding:1rem 1.8rem;background:#000;-webkit-box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);border-radius:10px;font-weight:500;color:#fff;font-family: 'Open Sans', sans-serif, Courier, monospace,monospace;
+
+#clothesRack{
+  max-height: 100%;
+  max-width: 100%;
+  margin-right: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border: 0px;
+  padding-top: 0;
+}
+
+h1{
+  font-family: 'Open Sans', sans-serif, Courier, monospace,monospace;
+  font-weight: normal;
+}
+
+.container{
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 0;
+  padding-top:0;
+}
+
+
+
+/* Container holding the image and the text */
+.container1 {
+  position:fixed; 
+  bottom:0;
+  text-align: center;
+  margin-right: 0px;
+  padding-right: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border: 0px;
+  font-size: 0.5rem;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  color: green;
+}
+
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  color: green;
+}
+
+/* Centered text */
+.bottom-centered {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: green;
+}
+
+#logo1{
+  width: 4rem;
+  height: 4rem;
+}
+
+a, p, img{
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  bottom:0;
+}
+
+.bottom-centered, .bottom-right, a, #legal{
+  color: white;
+  font-size: 1rem;
+}
+
+.bottom-left{
+  color: black;
+  font-size: 1rem;
+  margin-left: 0vw;
+}
+
+@media (max-width: 900px) {
+  
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+ padding: 0;
+ margin: 0;
+ border: 0;
+}
+
+.head{
+margin-left: 10vw;
+margin-right: 10vw;
+margin-top: 10vw;
+font-family: 'Open Sans', sans-serif, Courier, monospace,monospace;
+text-align: center;
+font-weight: normal;
+height: 40vw;
+font-size: 9vw;
+}
+
+.subHead{
+ font-family:'Inconsolata',monospace;
+ font-size: 4vw;
+ text-align:center;
+ margin-left: 13vw;
+ margin-right: 13vw;
+ margin-top: 10vw;
+}
+
+.button{padding:1rem 1.8rem;background:#000;-webkit-box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);border-radius:10px;font-weight:500;color:#fff;font-family: 'Open Sans', sans-serif, Courier, monospace;margin:1rem;font-size:1.3rem; margin-top: 30vw;}
+
+#clothesRack{
+ max-height: 100%;
+ max-width: 100%;
+ margin-right: 0px;
+ padding-right: 0px;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
+ border: 0px;
+ padding-top: 0;
+}
+
+h1{
+font-family: 'Open Sans', sans-serif, Courier, monospace,monospace;
+font-weight: normal;
+}
+
+.container{
+ text-align: center;
+ bottom: 0;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
+ margin-top: 0;
+ padding-top:0;
+}
+
+
+
+/* Container holding the image and the text */
+.container1 {
+ position:fixed; 
+ bottom:0;
+ text-align: center;
+ margin-right: 0px;
+ padding-right: 0px;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
+ border: 0px;
+ font-size: 1vw;
+}
+
+/* Bottom left text */
+.bottom-left {
+ position: absolute;
+ bottom: 0px;
+ left: 16px;
+ color: green;
+}
+
+
+/* Bottom right text */
+.bottom-right {
+ position: absolute;
+ bottom: 5px;
+ right: 16px;
+ color: green;
+}
+
+/* Centered text */
+.bottom-centered {
+ position: absolute;
+ bottom: 5px;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ color: green;
+}
+
+#logo1{
+ width: 10vw;
+ height: 10vw;
+}
+
+a, p, img{
+ border-bottom: 0;
+ padding-bottom: 0;
+ margin-bottom: 0;
+ bottom:0;
+}
+
+.bottom-centered, .bottom-right, a, #legal{
+ color: white;
+ font-size: 2.5vw;
+}
+
+.bottom-left{
+ color: black;
+ font-size: 3vw;
+}
+
+
+}
 }
