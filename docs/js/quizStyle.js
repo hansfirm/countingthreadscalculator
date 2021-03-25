@@ -1,5 +1,5 @@
 
-
+  
   var current_fs, next_fs, previous_fs; //fieldsets
   var opacity;
   var current = 1;
@@ -9,6 +9,7 @@
   
   $(".next").click(function(){
   
+  console.log('Hello World');
   current_fs = $(this).parent();
   next_fs = $(this).parent().next();
   
