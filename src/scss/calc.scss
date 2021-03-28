@@ -117,7 +117,7 @@ p.introFF {
   background-color: black;
 }
 
-p.introMan{
+p.introMan1{
   font-size: x-large;
   font-family: "Gill Sans";
   font-size: lighter;
@@ -637,7 +637,7 @@ p.introMan{
   #msform .action-button-previous:focus {
     background-color: black;
   }
-  
+
   p.introMan{
     font-size: x-large;
     font-family: "Gill Sans";
@@ -779,4 +779,11 @@ p.introMan{
     right: 3vw;
   
   }
+}
+
+.vh{
+
+  visibility:hidden;
+  position:absolute;
+  
 }

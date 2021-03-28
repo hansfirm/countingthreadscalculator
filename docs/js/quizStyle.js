@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 
   var current_fs, next_fs, previous_fs; //fieldsets
   var opacity;
@@ -72,6 +72,8 @@
   $(".submit").click(function(){
   return false;
   })
+  
+  });
 
 
 
@@ -88,8 +90,18 @@ else
 
 
 var i = 0;
+var qt =0;
+var dog = 0;
+var cat = 0;
+var otter = 0;
+var liger = 0;
 var txt = `Good ${relativeTime} – I'm here to help determine your annual fashion footprint! Answer the following questions to see how your clothing affects the environment and economy.`; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var textothy = `Bet! I'm on it...`;
+var textothy2 = 'Finding fashion industry facts...';
+var textothy3 = 'Plugging in your fashion habits...';
+var textothy4 = 'Crunching the numbers...';
+var textothy5 = 'Ready for your results?';
+var speed = 35; /* The speed/duration of the effect in milliseconds */
 
 window.onload = function typeWriter() {
   if (i < txt.length) {
@@ -99,3 +111,93 @@ window.onload = function typeWriter() {
   }
 }
  
+
+
+next2.addEventListener("click", myFunction);
+
+
+
+function myFunction() {
+
+  console.log(textothy)
+
+  if (qt < textothy.length) {
+    document.getElementById("demo1").innerHTML += textothy.charAt(qt);
+    qt++;
+    setTimeout(myFunction, speed);
+  }
+  myFunction2();
+}
+
+
+
+function myFunction2() {
+  
+  console.log(qt);
+
+  if (qt >= 17){
+
+  if (dog < textothy2.length) {
+    document.getElementById("demo2").innerHTML += textothy2.charAt(dog);
+    dog++;
+    setTimeout(myFunction2, speed);
+  }
+}
+
+myFunction3();
+}
+
+
+function myFunction3(){
+
+  console.log(dog);
+
+  if (dog >=33){
+
+  if (cat < textothy3.length) {
+    document.getElementById("demo3").innerHTML += textothy3.charAt(cat);
+    cat++;
+    setTimeout(myFunction3, speed);
+  }
+}
+
+myFunction4();
+
+
+}
+
+function myFunction4(){
+
+  console.log(cat);
+
+ if (cat >=34){
+
+  if (otter < textothy4.length) {
+    document.getElementById("demo4").innerHTML += textothy4.charAt(otter);
+    otter++;
+    setTimeout(myFunction4, speed);
+  }
+}
+
+myFunction5();
+
+
+}
+
+function myFunction5(){
+
+  console.log(otter);
+
+
+  if (otter >=24){
+
+  if (liger < textothy5.length) {
+    document.getElementById("demo5").innerHTML += textothy5.charAt(liger);
+    liger++;
+    setTimeout(myFunction5, speed);
+  }
+}
+
+
+
+}

@@ -1,14 +1,3 @@
-
-
-var horas = new Date().getHours();
-if (horas >= 0 && horas < 12)
-    {var relativeTime = "morning";}
-else if (horas >= 12 && horas < 18)
-    {var relativeTime = "afternoon";}
-else 
-    {var relativeTime = "evening";}
-    document.getElementById("tiempo").innerHTML = relativeTime;
-
 var questionNumber = 1
 var wash = 0
 var dry = 0
