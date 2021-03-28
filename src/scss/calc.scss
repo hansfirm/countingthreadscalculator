@@ -117,13 +117,6 @@ p.introFF {
   background-color: black;
 }
 
-p.introMan1{
-  font-size: x-large;
-  font-family: "Gill Sans";
-  font-size: lighter;
-  padding-right: 13vw;
-  padding-left: 13vw;
-}
 
 .card {
   z-index: 0;
@@ -259,6 +252,32 @@ p.introMan1{
   right: 3vw;
 
 }
+
+
+p.introMan1{
+  font-size: x-large;
+  font-family: "Gill Sans";
+  font-size: lighter;
+  padding-right: 13vw;
+  padding-left: 13vw;
+}
+
+
+
+
+p.introMan2{
+
+  font-size: x-large;
+  font-family: "Gill Sans";
+  font-size: lighter;
+
+  padding: 0;
+  margin:0; 
+  text-align: left;
+  padding-left: 20%;
+}
+
+
 }
 
 @media (min-width:341px) and (max-width:450px){
@@ -519,6 +538,27 @@ p.introMan1{
     right: 3vw;
   
   }
+  p.introMan1{
+    font-size: x-large;
+    font-family: "Gill Sans";
+    font-size: lighter;
+    padding-right: 13vw;
+    padding-left: 13vw;
+  }
+  
+  p.introMan2{
+  
+    font-size: x-large;
+    font-family: "Gill Sans";
+    font-size: lighter;
+ 
+  
+    padding: 0;
+    margin:0; 
+    text-align: left;
+    padding-left: 0%;
+  }
+  
 }
 
 @media (min-width:0px) and (max-width:341px){
@@ -779,11 +819,26 @@ p.introMan1{
     right: 3vw;
   
   }
+
+
+p.introMan1{
+  font-size: x-large;
+  font-family: "Gill Sans";
+  font-size: lighter;
+  padding-right: 13vw;
+  padding-left: 13vw;
 }
 
-.vh{
+p.introMan2{
 
-  visibility:hidden;
-  position:absolute;
-  
+  font-size: x-large;
+  font-family: "Gill Sans";
+  font-size: lighter;
+
+
+  padding: 0;
+  margin:0; 
+  text-align: left;
+  padding-left: 15%;
+}
 }

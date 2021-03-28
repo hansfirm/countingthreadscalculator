@@ -101,7 +101,18 @@ var textothy2 = 'Finding fashion industry facts...';
 var textothy3 = 'Plugging in your fashion habits...';
 var textothy4 = 'Crunching the numbers...';
 var textothy5 = 'Ready for your results?';
-var speed = 35; /* The speed/duration of the effect in milliseconds */
+var speed = 40; /* The speed/duration of the effect in milliseconds */
+var speed1 = 45;
+var speed2 = 90;
+var speed3 = 160;
+var speed4 = 300;
+var speed5 = 400;
+
+
+
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
 
 window.onload = function typeWriter() {
   if (i < txt.length) {
@@ -124,7 +135,7 @@ function myFunction() {
   if (qt < textothy.length) {
     document.getElementById("demo1").innerHTML += textothy.charAt(qt);
     qt++;
-    setTimeout(myFunction, speed);
+    setTimeout(myFunction, speed1);
   }
   myFunction2();
 }
@@ -140,7 +151,7 @@ function myFunction2() {
   if (dog < textothy2.length) {
     document.getElementById("demo2").innerHTML += textothy2.charAt(dog);
     dog++;
-    setTimeout(myFunction2, speed);
+    setTimeout(myFunction2, speed2);
   }
 }
 
@@ -157,7 +168,7 @@ function myFunction3(){
   if (cat < textothy3.length) {
     document.getElementById("demo3").innerHTML += textothy3.charAt(cat);
     cat++;
-    setTimeout(myFunction3, speed);
+    setTimeout(myFunction3, speed3);
   }
 }
 
@@ -175,7 +186,7 @@ function myFunction4(){
   if (otter < textothy4.length) {
     document.getElementById("demo4").innerHTML += textothy4.charAt(otter);
     otter++;
-    setTimeout(myFunction4, speed);
+    setTimeout(myFunction4, speed4);
   }
 }
 
@@ -184,7 +195,14 @@ myFunction5();
 
 }
 
+
 function myFunction5(){
+  sleep(9000).then(() => {
+    myFunction6();
+  });
+}
+
+function myFunction6(){
 
   console.log(otter);
 
@@ -194,10 +212,8 @@ function myFunction5(){
   if (liger < textothy5.length) {
     document.getElementById("demo5").innerHTML += textothy5.charAt(liger);
     liger++;
-    setTimeout(myFunction5, speed);
+    setTimeout(myFunction6, speed5);
   }
 }
-
-
 
 }
