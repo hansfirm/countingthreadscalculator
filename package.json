@@ -51,7 +51,9 @@
     "request": "^2.88.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4.6.0",
+    "html2canvas": "file:node_modules/html2canvas",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.0",
     "rfs": "^9.0.3"

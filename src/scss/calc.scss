@@ -172,23 +172,22 @@ p.introFF {
 }
 
 #progressbar #welcome:before {
-  font-family: FontAwesome;
-  content: "\f13e"
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1ea";
 }
 
 #progressbar #questions:before {
   font-family: FontAwesome;
-  content: "\f007"
+  content: "\f1ec"
 }
 
 #progressbar #calculate:before {
   font-family: FontAwesome;
-  content: "\f030"
+  content: "\f030";
 }
 
 #progressbar #results:before {
   font-family: FontAwesome;
-  content: "\f00c"
+  content: "\f00c";
 }
 
 #progressbar li:before {
@@ -277,6 +276,30 @@ p.introMan2{
   padding-left: 20%;
 }
 
+
+
+.checkbox{
+display: inline-block;
+}
+
+label{
+  display: inline-block;
+}
+
+
+
+span input#vehicle1{
+  display: inline-block;
+}
+
+
+
+input#onlineRange.row, input#donateSellRange.row{
+  width: 50vw;
+}
+.slideContainer1 p, .slideContainer2 p{
+  display: inline-block;
+}
 
 }
 
@@ -558,7 +581,22 @@ p.introMan2{
     text-align: left;
     padding-left: 0%;
   }
-  
+
+  .checkbox input,.checkbox label{
+    display:inline-block;
+    vertical-align:middle;	
+  }
+  .checkbox label{margin-right:20px;}
+
+
+
+input#onlineRange.row, input#donateSellRange.row{
+  width: 30vw;
+}
+.slideContainer1 p, .slideContainer2 p{
+  display: inline-block;
+}
+
 }
 
 @media (min-width:0px) and (max-width:341px){
@@ -841,4 +879,21 @@ p.introMan2{
   text-align: left;
   padding-left: 15%;
 }
+
+.checkbox input,.checkbox label{
+  display:inline-block;
+  vertical-align:middle;	
 }
+.checkbox label{margin-right:20px;}
+
+
+
+input#onlineRange.row, input#donateSellRange.row{
+  width: 30vw;
+}
+.slideContainer1 p, .slideContainer2 p{
+  display: inline-block;
+}
+
+}
+

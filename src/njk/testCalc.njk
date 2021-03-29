@@ -35,7 +35,88 @@
                         <div class="form-card">
                             <div class="row">
                                 <div class="col-12">
+                                    
                                     <h2 class="fs-title">Answer the questions:</h2>
+                                    
+                                    <p class='row'>1. How often do you buy new clothes?</p>
+                                        <select name = "dropdown" class ='row' id="freq" onInput="" value="0">
+                                            <option value = "8008">--Select--</option>
+                                            <option value = "104">Twice a week.</option>
+                                            <option value = "52">Once a week.</option>
+                                            <option value = "24">Twice a month.</option> 
+                                            <option value = "12">Once a month.</option>
+                                            <option value = "6">Every couple months.</option>
+                                            <option value = "2">Twice a year.</option>
+                                            <option value = "1">Once a year.</option>
+                                        </select>
+
+                                    <p>2. What brands or shops do you buy from? (Select all that apply)</p>
+                                    <div id="brands" class="checkbox">
+                                      <label id="god" for="vehicle1"><span>Adidas</span><input type="checkbox" id="vehicle1" name="vehicle1" value="Adidas">
+                                      </label>
+                                      <label id="god" for="vehicle2">Calvin Klein<input type="checkbox" id="vehicle2" name="vehicle2" value="Calvin Klein">
+                                      </label>
+                                      <label id="god" for="vehicle3">H&M<input type="checkbox" id="vehicle3" name="vehicle3" value="H&M">
+                                      </label>
+                                      <label id="god" for="vehicle4">Levi's<input type="checkbox" id="vehicle4" name="vehicle4" value="Levi's">
+                                      </label>
+                                      <label id="god" for="vehicle5">Urban Outfitters<input type="checkbox" id="vehicle5" name="vehicle5" value="Urban Outfitters">
+                                      </label>
+                                      <label id="god" for="vehicle6">Fashion Nova<input type="checkbox" id="vehicle6" name="vehicle6" value="Fashion Nova">
+                                      </label>
+                                      <label id="god" for="vehicle7">Gildan<input type="checkbox" id="vehicle7" name="vehicle7" value="Gildan">
+                                      </label>
+                                      <label id="god" for="vehicle8">Forever 21<input type="checkbox" id="vehicle8" name="vehicle8" value="Forever 21">
+                                      </label>
+                                      <label id="god" for="vehicle9">Nike<input type="checkbox" id="vehicle9" name="vehicle9" value="Nike">
+                                      </label>
+                                      <label id="god" for="vehicle10">New Balance<input type="checkbox" id="vehicle10" name="vehicle10" value="New Balance">
+                                      </label>
+                                      <label id="god" for="vehicle11">Patagonia<input type="checkbox" id="vehicle11" name="vehicle11" value="Patagonia">
+                                      </label>
+                                      <label id="god" for="vehicle12">Shein<input type="checkbox" id="vehicle12" name="vehicle12" value="Shein">
+                                      </label>
+                                      <label id="god" for="vehicle13">Ralph Lauren<input type="checkbox" id="vehicle13" name="vehicle13" value="Ralph Lauren">
+                                      </label>
+                                      <label id="god" for="vehicle14">Zara<input type="checkbox" id="vehicle14" name="vehicle14" value="Zara">
+                                      </label>
+                                      <label id="god" for="vehicle15">Old Navy<input type="checkbox" id="vehicle15" name="vehicle15" value="Old Navy">
+                                      </label>
+                                    </div>
+
+                                    <div id="Q3" class="slideContainer1">
+                                        <p>3. What fraction of your clothes do you buy online rather than in-store?</p>
+                                        <input type="range" min="0" max="100" value="0" id="onlineRange" class="row" onInput="nothing"> 
+                                        <p class="row"><span id="online"></span>%</p>
+                                      </div>
+                                      <div id="Q4" class="slideContainer2">
+                                        <p>4. What fraction of your old clothes do you donate or sell?"</p>
+                                        <input type="range" min="0" max="100" value="0" id="donateSellRange" class="row" onInput="something"> 
+                                        <p class="row"><span id="donateSell"></span>%</p>
+                                      </div>
+
+                                      <p class='row'>5. How many loads of clothes do you wash per week?</p>
+                                        <select name = "dropdown" class ='row' id="wash">
+                                            <option value = "8008" selected>--Select--</option>
+                                            <option value = "1">1</option>
+                                            <option value = "2">2</option>
+                                            <option value = "3">3</option> 
+                                            <option value = "4">4</option>
+                                            <option value = "5">5</option>
+                                            <option value = "6">6</option>
+                                        </select>
+
+                                    <p class='row'>6. How many times do you run the tumbledryer per week?</p>
+                                        <select name = "dropdown" class ='row' id="dry">
+                                            <option value = "8008" selected>--Select--</option>
+                                            <option value = "1">1</option>
+                                            <option value = "2">2</option>
+                                            <option value = "3">3</option> 
+                                            <option value = "4">4</option>
+                                            <option value = "5">5</option>
+                                            <option value = "6">6</option>
+                                        </select>
+
                                 </div>
                             </div> 
                         </div> <input type="button" id="next2" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
@@ -56,23 +137,36 @@
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
-                                <div class="col-7">
-                                    <h2 class="fs-title">Finish:</h2>
-                                </div>
-                                <div class="col-5">
-                                    <h2 class="steps">Step 4 - 4</h2>
-                                </div>
-                            </div> <br><br>
-                            <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
-                            <div class="row justify-content-center">
-                                <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
-                            </div> <br><br>
-                            <div class="row justify-content-center">
-                                <div class="col-7 text-center">
-                                    <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                <div class="col-12">
+                                    <h2 class="fs-title">Here's what I calculated:</h2>
+                                    <div id="capture" style="padding: 10px;" class="results">
+                                        <h3></h3>
+                                        <p>Your yearly wardrobe costs an estimated $<span id="yearlyCost"></span>.</p>
+                                        <p>More than <span id="workers"></span> different garment workers make the clothes you buy every year, but an estimated <span id="underpaidWorkers"></span> those workers are not paid a living wage.</p>
+                                        <p>With all the money you spend every year, you could purchase approximately <span id="smallBiz"></span> articles of sustainable clothing instead – while simultaneously supporting smaller businesses!</p>
+                                        <br>
+                                        <h3>But that's just the economic side of it...</h3>
+                                        <p>The fashion industry hurts animals, too. They are exploited for wool, leather, fur, silk and down.</p>
+                                        <p>Although the data is not transparent, an estimated <span id="animalsHurt"></span> <span id="animalVerbage"></span> used or killed for your clothes annually.</p>
+                                        <br>
+                                        <h3>Fashion manufacturing also takes a toll on the environment...</h3>
+                                        <p>Your annual clothing:</p>
+                                        <ul>
+                                          <li>emits <span id="carbon"></span> lbs of Co2.</li>
+                                          <li>uses <span id="water"></span> gallons of water.</li>
+                                          <li>occupies <span id="acres"></span> acres of land.</li>
+                                          <li>takes <span id="electricity"></span> watts of electricity.</li>
+                                          <li>leaks <span id="dyes"></span> pounds of water pollution through its dying process.</li>
+                                          <li>requires <span id="pestidogs"></span> <span id="pestidogsVerbage"></span> of pesticides.</li>
+                                        </ul>
+                                        <br>
+                                        <p>That's enough electricity to power the average American hospital for <span id="hospitalHours"></span> hours...</p>
+                                        <p>All that Co2 is equivalent to <span id="roadTrips"></span> <span id="roadTripsVerbage"></span> from Austin to Dallas and back...</p>
+                                        <p>You could convert all that water into <span id="showers"></span> showers...</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <input type="button" name="share" class="share action-button" value="Share" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
                 </form>
             </div>
@@ -84,6 +178,12 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="js/quizStyle.js"></script> 
+
+    <script src="js/html2canvas.min.js"></script> <script>$(".share").click(function(){
+        html2canvas(document.querySelector("#capture")).then(canvas => {
+        document.body.appendChild(canvas);
+      });
+      });</script>
 
 {% endblock %}
 
