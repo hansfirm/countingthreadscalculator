@@ -1,6 +1,6 @@
 
 
-@media (min-width:451px) and (max-width:3000px){
+@media (min-width:790px) and (max-width:3000px){
 
 * {
   font-family: "Gill Sans";
@@ -10,7 +10,7 @@ html {
   height: 100%
 }
 
-p {
+p, li{
   color: grey
 }
 
@@ -271,11 +271,11 @@ p.introMan2{
   font-size: x-large;
   font-family: "Gill Sans";
   font-size: lighter;
-
   padding: 0;
   margin:0; 
   text-align: left;
-  padding-left: 20%;
+  padding-right: 13vw;
+  padding-left: 13vw;
 }
 
 
@@ -303,19 +303,61 @@ input#onlineRange.row, input#donateSellRange.row{
   display: inline-block;
 }
 
+.resultsPic1{
+
+width: 7vw;
+height: 7vw;
+position: absolute;
+right: 9vw;
+top: 0.8vw;
 }
 
-@media (min-width:341px) and (max-width:450px){
+
+.resultsPic2{
+
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  right: 3vw;
+  transform: translateY(-6vw);
+  }
+  
+  
+  .resultsPic3{
+
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    right: 9vw;
+    transform: translateY(3vw);
+  }
+
+
+ #god{
+   font-size:smaller;
+ }
+
+ #showMeTheMoney{
+  visibility:hidden;
+}
+
+
+}
+
+@media (min-width:527px) and (max-width:789px){
 
   * {
     font-family: "Gill Sans";
+    
   }
+
+  
   
   html {
     height: 100%
   }
   
-  p {
+  p, li{
     color: grey
   }
   
@@ -340,6 +382,13 @@ input#onlineRange.row, input#donateSellRange.row{
     text-align: center;
     position: relative;
     margin-top: 20px;
+  }
+
+  #msform #progressbar{
+    margin-left:0vw;
+    margin-right: 0vw;
+    padding-left:0vw;
+    padding-right: 0vw;
   }
   
   #msform fieldset {
@@ -383,7 +432,7 @@ input#onlineRange.row, input#donateSellRange.row{
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: 1px solid black;
-    outline-width: 0
+    outline-width: 0;
   }
   
   #msform .action-button {
@@ -467,19 +516,32 @@ input#onlineRange.row, input#donateSellRange.row{
     overflow: hidden;
     color: lightgrey;
     padding-left: 0vw;
+    margin-left:0vw;
+    margin-right: 0vw;
+    
   }
   
+
+  ul#progressbar{
+    float: center;
+  }
+
+
   #progressbar .active {
     color: black;
   }
+
+
   
   #progressbar li {
+    transform: translateX(40%);
     list-style-type: none;
-    font-size: 2vw;
-    width: 25%;
+    font-size: 2.5vw;
+    width: 20%;
     float: left;
     position: relative;
     font-weight: 400;
+  
   }
   
   #progressbar #welcome:before {
@@ -564,7 +626,7 @@ input#onlineRange.row, input#donateSellRange.row{
   
   }
   p.introMan1{
-    font-size: x-large;
+    font-size: large;
     font-family: "Gill Sans";
     font-size: lighter;
     padding-right: 13vw;
@@ -581,7 +643,7 @@ input#onlineRange.row, input#donateSellRange.row{
     padding: 0;
     margin:0; 
     text-align: left;
-    padding-left: 0%;
+    padding-left: 25vw;
   }
 
   .checkbox input,.checkbox label{
@@ -592,26 +654,95 @@ input#onlineRange.row, input#donateSellRange.row{
 
 
 
-input#onlineRange.row, input#donateSellRange.row{
-  width: 30vw;
+  input#onlineRange.row, input#donateSellRange.row{
+    width: 50vw;
+  }
+  .slideContainer1 p, .slideContainer2 p{
+    display: inline-block;
+  }
+
+
+  .resultsPic1{
+
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    right: 6vw;
+    top: 5vw;
+    }
+    
+  
+  .resultsPic2{
+  
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    right: 0vw;
+    transform: translateY(-8vw);
+    }
+    
+    
+    .resultsPic3{
+  
+      width: 9vw;
+      height: 9vw;
+      position: absolute;
+      right: 11vw;
+      transform: translateY(3vw);
+    }
+
+#preguntas{
+  transform: translateX(8vw);
 }
-.slideContainer1 p, .slideContainer2 p{
-  display: inline-block;
+
+#resultados{
+  transform: translateX(8vw);
 }
+
+#showMeTheMoney{
+  visibility:hidden;
+}
+
+
+#god{
+  font-size:smaller;
+}
+
+
+#next2, #prev2{
+  transform: translateX(-10vw)
+}
+
+#next1{
+  transform: translateX(-15vw);
+}
+
+#next3, #prev3{
+  transform: translateX(-15vw);
+ 
+}
+
+#share, #prev4{
+  transform: translateX(-8vw);
+}
+
+
 
 }
 
-@media (min-width:0px) and (max-width:341px){
+@media (min-width:0px) and (max-width:526px){
 
   * {
     font-family: "Gill Sans";
-  }
   
+  }
+
+ 
   html {
     height: 100%
   }
   
-  p {
+  p, li {
     color: grey
   }
   
@@ -764,15 +895,19 @@ input#onlineRange.row, input#donateSellRange.row{
     color: lightgrey;
     padding-left: 0vw;
   }
+
+
+ 
   
   #progressbar .active {
     color: black;
   }
   
   #progressbar li {
+    transform: translateX(40%);
     list-style-type: none;
     font-size: 3vw;
-    width: 25%;
+    width: 20%;
     float: left;
     position: relative;
     font-weight: 400;
@@ -862,7 +997,7 @@ input#onlineRange.row, input#donateSellRange.row{
 
 
 p.introMan1{
-  font-size: x-large;
+  font-size: medium;
   font-family: "Gill Sans";
   font-size: lighter;
   padding-right: 13vw;
@@ -871,7 +1006,7 @@ p.introMan1{
 
 p.introMan2{
 
-  font-size: x-large;
+  font-size: medium;
   font-family: "Gill Sans";
   font-size: lighter;
 
@@ -891,11 +1026,76 @@ p.introMan2{
 
 
 input#onlineRange.row, input#donateSellRange.row{
-  width: 30vw;
+  width: 60vw;
 }
 .slideContainer1 p, .slideContainer2 p{
   display: inline-block;
 }
 
+.resultsPic1{
+
+  width: 7vw;
+  height: 7vw;
+  position: absolute;
+  right: 2vw;
+  top: 9vw;
+  }
+  
+  
+  .resultsPic2{
+  
+    width: 7.5vw;
+    height: 7.5vw;
+    position: absolute;
+    right: 0vw;
+    transform: translateY(-5vw);
+    }
+    
+    
+    .resultsPic3{
+  
+      width: 8.5vw;
+      height: 8.5vw;
+      position: absolute;
+      right: 2vw;
+      transform: translateY(3vw);
+    }
+  
+    #preguntas{
+      transform: translateX(3vw);
+    }
+
+
+    #resultados{
+      transform: translateX(3vw);
+    }
+
+    #showMeTheMoney{
+      visibility:hidden;
+    }
+
+
+    #god{
+      font-size:x-small;
+    }
+
+    #next2, #prev2{
+      transform: translateX(-5vw)
+    }
+
+
+    #next1{
+      transform: translateX(-12vw);
+    }
+    
+
+    #next3, #prev3{
+      transform: translateX(-3vw);
+    }
+
+    #share, #prev4{
+      transform: translateX(-8vw);
+    }
+    
 }
 

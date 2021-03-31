@@ -37,12 +37,12 @@
                                     <p class="introMan1" id="demo"></p>
                                 </div>
                             </div>
-                        </div> <input type="button" name="next" class="next action-button" value="Next" />
+                        </div> <input type="button" id='next1' name="next" class="next action-button" value="Next" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
-                                <div class="col-12">
+                                <div id="preguntas" class="col-12">
                                     
                                     <h2 class="fs-title">Answer the questions:</h2>
                                     
@@ -127,7 +127,7 @@
 
                                 </div>
                             </div> 
-                        </div> <input type="button" id="next2" name="next" class="next2 action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </div> <input type="button" id="next2" name="next" class="next2 action-button" value="Next" /> <input type="button" id="prev2" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
@@ -140,41 +140,45 @@
                                     <p class="introMan2" id="demo5"></p>
                                 </div>
                             </div>
-                        </div>  <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </div>  <input type="button" id="next3" name="next" class="next3 action-button" value="Next" /> <input type="button" id="prev3" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>        
                     <fieldset>
-                        <div class="form-card">
+                        <div id="resultados" class="form-card">
                             <div class="row">
                                 <div class="col-12">
-                                    <h2 class="fs-title">Here's what I calculated:</h2>
                                     <div id="capture" style="padding: 10px;" class="results">
-                                        <h3></h3>
-                                        <p>Your yearly wardrobe costs an estimated $<span id="yearlyCost"></span>.</p>
-                                        <p>More than <span id="workers"></span> different garment workers make the clothes you buy every year, but an estimated <span id="underpaidWorkers"></span> those workers are not paid a living wage.</p>
-                                        <p>With all the money you spend every year, you could purchase approximately <span id="smallBiz"></span> articles of sustainable clothing instead – while simultaneously supporting smaller businesses!</p>
-                                        <br>
-                                        <h3>But that's just the economic side of it...</h3>
+                                        <h2 class="fs-title" id="treasure"></h2>
+                                        <div id="showMeTheMoney">
+                                        <img class="resultsPic1" class="image-fluid" src="img/money.PNG" alt="An illustrated stack of money."/>
+                                        <p>- Your yearly wardrobe costs an estimated <b>$<span id="yearlyCost"></span></b>.</p>
+                                        <p>- More than <b><span id="workers"></span> different garment workers</b> make the clothes you buy every year, but an estimated <b><span id="underpaidWorkers"></span></b> those workers are not paid a living wage.</p>
+                                        <p>- With all the money you spend every year, you could purchase approximately <b><span id="smallBiz"></span> articles of sustainable clothing</b> instead – while simultaneously supporting smaller businesses!</p>
+                                        
+                                        <h2 class="fs-title">But that's just the economic side of it...</h2>
+                                        <img class="resultsPic2" class="image-fluid" src="img/cow.PNG" alt="An illustrated bovine."/>
                                         <p>The fashion industry hurts animals, too. They are exploited for wool, leather, fur, silk and down.</p>
-                                        <p>Although the data is not transparent, an estimated <span id="animalsHurt"></span> <span id="animalVerbage"></span> used or killed for your clothes annually.</p>
-                                        <br>
-                                        <h3>Fashion manufacturing also takes a toll on the environment...</h3>
+                                        <p>Although the data is not transparent, an estimated <b><span id="animalsHurt"></span> <span id="animalVerbage"></span></b> used or killed for your clothes annually.</p>
+                                        
+                                        <h2 class="fs-title">Fashion manufacturing also takes a toll on the environment...</h2>
+                                        <img class="resultsPic3" class="image-fluid" src="img/smoke.PNG" alt="An illustrated smokestack factory."/>
                                         <p>Your annual clothing:</p>
                                         <ul>
-                                          <li>emits <span id="carbon"></span> lbs of Co2.</li>
-                                          <li>uses <span id="water"></span> gallons of water.</li>
-                                          <li>occupies <span id="acres"></span> acres of land.</li>
-                                          <li>takes <span id="electricity"></span> watts of electricity.</li>
-                                          <li>leaks <span id="dyes"></span> pounds of water pollution through its dying process.</li>
-                                          <li>requires <span id="pestidogs"></span> <span id="pestidogsVerbage"></span> of pesticides.</li>
+                                          <li>emits <b><span id="carbon"></span> lbs</b>  of Co2.</li>
+                                          <li>uses <b><span id="water"></span> gallons</b> of water.</li>
+                                          <li>occupies <b><span id="acres"></span> acres</b> of land.</li>
+                                          <li>takes <b><span id="electricity"></span></b> watts of electricity.</li>
+                                          <li>leaks <b><span id="dyes"></span> pounds</b> of water pollution through its dying process.</li>
+                                          <li>requires <b><span id="pestidogs"></span> <span id="pestidogsVerbage"></span></b> of pesticides.</li>
                                         </ul>
-                                        <br>
-                                        <p>That's enough electricity to power the average American hospital for <span id="hospitalHours"></span> hours...</p>
-                                        <p>All that Co2 is equivalent to <span id="roadTrips"></span> <span id="roadTripsVerbage"></span> from Austin to Dallas and back...</p>
-                                        <p>You could convert all that water into <span id="showers"></span> showers...</p>
+                                    
+                                        <p>That's enough electricity to power the average American hospital for <b><span id="hospitalHours"></span> hours...</b></p>
+                                        <p>All that Co2 is equivalent to <b><span id="roadTrips"></span> <span id="roadTripsVerbage"></span></b> from Austin to Dallas and back...</p>
+                                        <p>You could convert all that water into <b><span id="showers"></span> showers...</b></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> <input type="button" name="share" class="share action-button" value="Share" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        </div> <input type="button" id="share" name="share" class="share action-button" value="Share" /> <input type="button" id="prev4" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
                 </form>
             </div>

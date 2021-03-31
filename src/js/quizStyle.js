@@ -1,3 +1,20 @@
+
+
+function addCommas(nStr)
+{
+    nStr += '';
+    var x = nStr.split('.');
+    var x1 = x[0];
+    var x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+}
+
+
+
 ///TOOLY
 var questionNumber = 1
 var wash = 0
@@ -174,14 +191,15 @@ function outputEverything() {
     console.log(washElectricity);
     console.log(dryElectricity);
 
-    document.getElementById("electricity").innerHTML = totalElectricity;
-    document.getElementById("hospitalHours").innerHTML = Math.round(hospitalHours);
+    document.getElementById('electricity').innerHTML = addCommas(totalElectricity);
+    document.getElementById("hospitalHours").innerHTML = addCommas(Math.round(hospitalHours));
 
 
     waterWasher = 52*wash*40;
     waterGrow = (713.2645*freq);
     water = Math.round(waterWasher+waterGrow);
-    document.getElementById("water").innerHTML = water;
+    document.getElementById('water').innerHTML = addCommas(water);
+
 
 
     acres = freq/536;
@@ -231,10 +249,10 @@ function outputEverything() {
     var animalsUsed = (freq*used)/totalAn;
     var animalsKilled = (freq*killed)/totalAn;
     var animalsHurt = Math.round(animalsUsed) + Math.round(animalsKilled) +1;
-    document.getElementById("yearlyCost").innerHTML = Math.round(yearlyCost);
+    document.getElementById("yearlyCost").innerHTML = addCommas(Math.round(yearlyCost));
     document.getElementById("workers").innerHTML = workers;
-    document.getElementById("underpaidWorkers").innerHTML = Math.round(underpaidWorkers);
-    document.getElementById("smallBiz").innerHTML = Math.round(smallBiz);
+    document.getElementById("underpaidWorkers").innerHTML = addCommas(Math.round(underpaidWorkers));
+    document.getElementById("smallBiz").innerHTML = addCommas(Math.round(smallBiz));
     document.getElementById("animalsHurt").innerHTML = animalsHurt;
 
 
@@ -245,11 +263,16 @@ function outputEverything() {
     document.getElementById("animalVerbage").innerHTML = animalVerbage; 
 
     userInitEmits = (freq*industryAnnualLbs)/industryUnitsSold;
-    onlinePercent = online*0.01;
+    if (online>0){
+      onlinePercent = online*0.01;
+    }
+    else{
+      onlinePercent = 0.009;
+    }
     emitsReimbursement = userInitEmits*0.6*(onlinePercent);
     userFinalEmits = userInitEmits - emitsReimbursement;
     roadTrips = userFinalEmits/377;
-    document.getElementById("carbon").innerHTML = Math.round(userFinalEmits);
+    document.getElementById("carbon").innerHTML = addCommas(Math.round(userFinalEmits));
 
     if (Math.round(roadTrips)==1){
       document.getElementById("roadTrips").innerHTML = Math.round(roadTrips);
@@ -265,7 +288,7 @@ function outputEverything() {
     }    
 
     showers = Math.round(water/17);
-    document.getElementById("showers").innerHTML = showers;
+    document.getElementById("showers").innerHTML = addCommas(showers);
 
 }
 
@@ -315,7 +338,7 @@ $(document).ready(function(){
 
 
     
-    if (freq==0 || freq==8008){
+    if (freq==0 || freq==8008) {
     
       alert("You didn't answer all the questions");
     }
@@ -353,106 +376,9 @@ next_fs.css({'opacity': opacity});
 },
 duration: 500
 });
-setProgressBar(++current);}
-});
+setProgressBar(++current);
 
-
-
-  
-  $(".previous").click(function(){
-  
-  current_fs = $(this).parent();
-  previous_fs = $(this).parent().prev();
-  
-  //Remove class active
-  $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-  
-  //show the previous fieldset
-  previous_fs.show();
-  
-  //hide the current fieldset with style
-  current_fs.animate({opacity: 0}, {
-  step: function(now) {
-  // for making fielset appear animation
-  opacity = 1 - now;
-  
-  current_fs.css({
-  'display': 'none',
-  'position': 'relative'
-  });
-  previous_fs.css({'opacity': opacity});
-  },
-  duration: 500
-  });
-  setProgressBar(--current);
-  });
-  
-  function setProgressBar(curStep){
-  var percent = parseFloat(100 / steps) * curStep;
-  percent = percent.toFixed();
-  $(".progress-bar")
-  .css("width",percent+"%")
-  }
-  
-  $(".submit").click(function(){
-  return false;
-  })
-
-  });
-
-
-
-
-  ///translating tooly!
-  var horas = new Date().getHours();
-if (horas >= 0 && horas < 12)
-    {var relativeTime = "morning";}
-else if (horas >= 12 && horas < 18)
-    {var relativeTime = "afternoon";}
-else 
-    {var relativeTime = "evening";}
-
-
-
-var i = 0;
-var qt =0;
-var dog = 0;
-var cat = 0;
-var otter = 0;
-var liger = 0;
-var txt = `Good ${relativeTime} – I'm here to help determine your annual fashion footprint! Answer the following questions to see how your clothing affects the environment and economy.`; /* The text */
-var textothy = `Bet! I'm on it...`;
-var textothy2 = 'Finding fashion industry facts...';
-var textothy3 = 'Plugging in your fashion habits...';
-var textothy4 = 'Crunching the numbers...';
-var textothy5 = 'Ready for your results?';
-var speed = 40; /* The speed/duration of the effect in milliseconds */
-var speed1 = 45;
-var speed2 = 90;
-var speed3 = 160;
-var speed4 = 300;
-var speed5 = 400;
-
-
-
-const sleep = (milliseconds) => {
-  return new Promise(resolve => setTimeout(resolve, milliseconds))
-}
-
-window.onload = function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
- 
-
-
-next2.addEventListener("click", myFunction);
-
-
-
+myFunction();
 
 function myFunction() {
 
@@ -543,4 +469,163 @@ function myFunction6(){
 }
 
 }
+
+    }
+
+});
+
+
+
+$(".next3").click(function(){
+
+  current_fs = $(this).parent();
+  next_fs = $(this).parent().next();
+  
+  //Add Class Active
+  $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+  
+  //show the next fieldset
+  next_fs.show();
+  //hide the current fieldset with style
+  current_fs.animate({opacity: 0}, {
+  step: function(now) {
+  // for making fielset appear animation
+  opacity = 1 - now;
+  
+  current_fs.css({
+  'display': 'none',
+  'position': 'relative'
+  });
+  next_fs.css({'opacity': opacity});
+  },
+  duration: 500
+  });
+  setProgressBar(++current);
+
+  var youngNudy=0;
+  nudyTxt='Here\'s what I calculated:';
+  typeWriterLast();
+
+  function typeWriterLast() {
+    console.log(youngNudy);
+    if (youngNudy < nudyTxt.length) {
+      document.getElementById("treasure").innerHTML += nudyTxt.charAt(youngNudy);
+      youngNudy++;
+      setTimeout(typeWriterLast, speed6);
+    }
+    showMeTheMoney();
+  }
+function showMeTheMoney(){
+  if (youngNudy <= 24){
+      console.log('Not yet.')
+  }
+  else{
+    sleep(1200).then(() => {
+      document.getElementById("showMeTheMoney").style.visibility = "visible";
+    });
+    
+  }
+};
+
+
+  });
+
+
+
+  
+  $(".previous").click(function(){
+  
+  current_fs = $(this).parent();
+  previous_fs = $(this).parent().prev();
+  
+  //Remove class active
+  $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+  
+  //show the previous fieldset
+  previous_fs.show();
+  
+  //hide the current fieldset with style
+  current_fs.animate({opacity: 0}, {
+  step: function(now) {
+  // for making fielset appear animation
+  opacity = 1 - now;
+  
+  current_fs.css({
+  'display': 'none',
+  'position': 'relative'
+  });
+  previous_fs.css({'opacity': opacity});
+  },
+  duration: 500
+  });
+  setProgressBar(--current);
+  });
+  
+  function setProgressBar(curStep){
+  var percent = parseFloat(100 / steps) * curStep;
+  percent = percent.toFixed();
+  $(".progress-bar")
+  .css("width",percent+"%")
+  }
+  
+  $(".submit").click(function(){
+  return false;
+  })
+
+  });
+
+
+
+
+  ///translating tooly!
+  var horas = new Date().getHours();
+if (horas >= 0 && horas < 12)
+    {var relativeTime = "morning";}
+else if (horas >= 12 && horas < 18)
+    {var relativeTime = "afternoon";}
+else 
+    {var relativeTime = "evening";}
+
+
+
+var i = 0;
+var qt =0;
+var dog = 0;
+var cat = 0;
+var otter = 0;
+var liger = 0;
+var txt = `Good ${relativeTime} – I'm here to help determine your annual fashion footprint! Answer the following questions to see how your clothing affects the environment and economy.`; /* The text */
+var textothy = `Bet! I'm on it...`;
+var textothy2 = 'Finding fashion industry facts...';
+var textothy3 = 'Plugging in your fashion habits...';
+var textothy4 = 'Crunching the numbers...';
+var textothy5 = 'Ready for your results?';
+var speed = 40; /* The speed/duration of the effect in milliseconds */
+var speed1 = 45;
+var speed2 = 90;
+var speed3 = 160;
+var speed4 = 300;
+var speed5 = 400;
+var speed6 = 75;
+
+
+
+const sleep = (milliseconds) => {
+  return new Promise(resolve => setTimeout(resolve, milliseconds))
+}
+
+window.onload = function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+ 
+
+
+
+
+
+
 
