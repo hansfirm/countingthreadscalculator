@@ -1,5 +1,4 @@
 
-
 function addCommas(nStr)
 {
     nStr += '';
@@ -14,6 +13,7 @@ function addCommas(nStr)
 }
 
 
+var youngNudy=0;
 
 ///TOOLY
 var questionNumber = 1
@@ -502,7 +502,8 @@ $(".next3").click(function(){
   });
   setProgressBar(++current);
 
-  var youngNudy=0;
+
+  
   nudyTxt='Here\'s what I calculated:';
   typeWriterLast();
 

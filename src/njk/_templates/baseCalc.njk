@@ -22,5 +22,12 @@
     <script src="{{ relative_path }}js/popper.js"></script>
     <script src="{{ relative_path }}js/bootstrap.js"></script>
     <script src="{{ relative_path }}js/scripts.js"></script>
+    <script src="js/quizStyle.js"></script> 
+    <script src="js/html2canvas.js"></script> 
+    <script>
+    html2canvas(document.querySelector("#capture")).then(canvas => {
+      document.body.appendChild(canvas)
+  });
+  </script>
   </body>
 </html>

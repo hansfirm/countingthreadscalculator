@@ -150,7 +150,8 @@
                                         <h2 class="fs-title" id="treasure"></h2>
                                         <div id="showMeTheMoney">
                                         <img class="resultsPic1" class="image-fluid" src="img/money.PNG" alt="An illustrated stack of money."/>
-                                        <p>- Your yearly wardrobe costs an estimated <b>$<span id="yearlyCost"></span></b>.</p>
+                                        <p class="hovertron">- Your yearly wardrobe costs an estimated <b>$<span id="yearlyCost"></span></b>.</p>
+                                        <p class="hide">This was calculated at a rate of $25 per item + according to the brands you selected</p>
                                         <p>- More than <b><span id="workers"></span> different garment workers</b> make the clothes you buy every year, but an estimated <b><span id="underpaidWorkers"></span></b> those workers are not paid a living wage.</p>
                                         <p>- With all the money you spend every year, you could purchase approximately <b><span id="smallBiz"></span> articles of sustainable clothing</b> instead – while simultaneously supporting smaller businesses!</p>
                                         
@@ -189,13 +190,7 @@
 
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src="js/quizStyle.js"></script> 
 
-    <script src="js/html2canvas.min.js"></script> <script>$(".share").click(function(){
-        html2canvas(document.querySelector("#capture")).then(canvas => {
-        document.body.appendChild(canvas);
-      });
-      });</script>
 
 
   
@@ -228,5 +223,12 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/quizStyle.js"></script> 
+    <script src="js/html2canvas.js"></script> 
+    <script>
+    html2canvas(document.querySelector("#capture")).then(canvas => {
+      document.body.appendChild(canvas)
+  });
+  </script>
   </body>
 </html>

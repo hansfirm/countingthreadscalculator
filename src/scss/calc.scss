@@ -1,6 +1,359 @@
 
+@media (min-width:1444px) and (max-width:3000px){
 
-@media (min-width:790px) and (max-width:3000px){
+  * {
+    font-family: "Gill Sans";
+  }
+  
+  html {
+    height: 100%
+  }
+  
+  p, li{
+    color: grey
+  }
+  
+  p.introFF {
+    color: grey;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+  }
+  
+  #heading {
+    text-transform: uppercase;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline black;
+    margin-bottom: 0vw;
+    margin-top: 5vw;
+  }
+  
+  #msform {
+    margin-left:15vw;
+    margin-right: 15vw;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  #msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+  }
+  
+  .form-card {
+    text-align: left
+  }
+  
+  #msform fieldset:not(:first-of-type) {
+    display: none
+  }
+  
+  #msform input,
+  #msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  #msform input:focus,
+  #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid black;
+    outline-width: 0
+  }
+  
+  #msform .action-button {
+    width: 100px;
+    background:black;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+  }
+  
+  #msform .action-button:hover,
+  #msform .action-button:focus {
+    background-color: black;
+  }
+  
+  #msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+  }
+  
+  #msform .action-button-previous:hover,
+  #msform .action-button-previous:focus {
+    background-color: black;
+  }
+  
+  
+  .card {
+    z-index: 0;
+    border: none;
+    position: relative
+  }
+  
+  .fs-title {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+  }
+  
+  .purple-text {
+    color: black;
+    font-weight: normal
+  }
+  
+  .steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+  }
+  
+  .fieldlabels {
+    color: gray;
+    text-align: left
+  }
+  
+  #progressbar {
+    margin-bottom: 5px;
+    overflow: hidden;
+    color: lightgrey;
+    content: center;
+    padding-left: 0vw;
+  }
+  
+  #progressbar .active {
+    color: black;
+  }
+  
+  #progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+  }
+  
+  #progressbar #welcome:before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1ea";
+  }
+  
+  #progressbar #questions:before {
+    font-family: FontAwesome;
+    content: "\f1ec"
+  }
+  
+  #progressbar #calculate:before {
+    font-family: FontAwesome;
+    content: "\f030";
+  }
+  
+  #progressbar #results:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+  }
+  
+  #progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+  }
+  
+  #progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+  }
+  
+  #progressbar li.active:before,
+  #progressbar li.active:after {
+    background: black;
+  }
+  
+  .progress {
+    height: 20px
+  }
+  
+  .progress-bar {
+    background-color: black;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  
+  .fit-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  #ctLogo{
+    bottom: 3vw;
+    width:5vw;
+    height:5vw;
+    position:fixed; 
+    left: 3vw;
+  
+  }
+  
+  #ffLogo{
+    bottom: 2.5vw;
+    width:6vw;
+    height:6vw;
+    position:fixed; 
+    right: 3vw;
+  
+  }
+  
+  
+  p.introMan1{
+    font-size: x-large;
+    font-family: "Gill Sans";
+    font-size: lighter;
+    padding-right: 13vw;
+    padding-left: 13vw;
+  }
+  
+  
+  
+  
+  p.introMan2{
+  
+    font-size: x-large;
+    font-family: "Gill Sans";
+    font-size: lighter;
+    padding: 0;
+    margin:0; 
+    text-align: left;
+    padding-left: 25vw;
+  }
+  
+  
+  
+  .checkbox{
+  display: inline-block;
+  }
+  
+  label{
+    display: inline-block;
+  }
+  
+  
+  
+  span input#vehicle1{
+    display: inline-block;
+  }
+  
+  
+  
+  input#onlineRange.row, input#donateSellRange.row{
+    width: 50vw;
+  }
+  .slideContainer1 p, .slideContainer2 p{
+    display: inline-block;
+  }
+  
+  .resultsPic1{
+  
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  right: 9vw;
+  top: 0vw;
+  }
+  
+  
+  .resultsPic2{
+  
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    right: 3vw;
+    transform: translateY(-2.5vw);
+    }
+    
+    
+    .resultsPic3{
+  
+      width: 7vw;
+      height: 7vw;
+      position: absolute;
+      right: 9vw;
+      transform: translateY(3vw);
+    }
+  
+  
+   #god{
+     font-size:smaller;
+   }
+  
+   #showMeTheMoney{
+    visibility:hidden;
+  }
+  
+  
+  .hide {
+    display: none;
+  }
+  
+  .hovertron:hover ~ .hide{
+    display: block;
+    color: red;
+  }
+  
+  
+  
+  }
+
+@media (min-width:790px) and (max-width:1443px){
 
 * {
   font-family: "Gill Sans";
@@ -274,8 +627,7 @@ p.introMan2{
   padding: 0;
   margin:0; 
   text-align: left;
-  padding-right: 13vw;
-  padding-left: 13vw;
+  padding-left: 20vw;
 }
 
 
@@ -340,6 +692,17 @@ top: 0.8vw;
  #showMeTheMoney{
   visibility:hidden;
 }
+
+
+.hide {
+  display: none;
+}
+
+.hide ~ .hovertron:hover {
+  display: block;
+  color: red;
+}
+
 
 
 }
@@ -1014,7 +1377,7 @@ p.introMan2{
   padding: 0;
   margin:0; 
   text-align: left;
-  padding-left: 15%;
+  padding-left: 15vw;
 }
 
 .checkbox input,.checkbox label{

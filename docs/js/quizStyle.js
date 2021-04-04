@@ -1,5 +1,4 @@
 
-
 function addCommas(nStr)
 {
     nStr += '';
@@ -14,6 +13,7 @@ function addCommas(nStr)
 }
 
 
+var youngNudy=0;
 
 ///TOOLY
 var questionNumber = 1
@@ -502,7 +502,8 @@ $(".next3").click(function(){
   });
   setProgressBar(++current);
 
-  var youngNudy=0;
+
+  
   nudyTxt='Here\'s what I calculated:';
   typeWriterLast();
 
@@ -520,7 +521,7 @@ function showMeTheMoney(){
       console.log('Not yet.')
   }
   else{
-    sleep(2000).then(() => {
+    sleep(1200).then(() => {
       document.getElementById("showMeTheMoney").style.visibility = "visible";
     });
     
@@ -606,7 +607,7 @@ var speed2 = 90;
 var speed3 = 160;
 var speed4 = 300;
 var speed5 = 400;
-var speed6 = 150;
+var speed6 = 75;
 
 
 
