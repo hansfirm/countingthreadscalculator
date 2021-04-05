@@ -1,4 +1,5 @@
 
+
 function addCommas(nStr)
 {
     nStr += '';
@@ -290,6 +291,21 @@ function outputEverything() {
     showers = Math.round(water/17);
     document.getElementById("showers").innerHTML = addCommas(showers);
 
+
+
+
+    if (Math.round(smallBiz) == 1 ){
+      articleVerbage = "article";
+      document.getElementById("articleVerbage").innerHTML = articleVerbage;
+    }
+    else{
+      articleVerbage = "articles";
+      document.getElementById("articleVerbage").innerHTML = articleVerbage;
+    }
+
+
+
+
 }
 
 
@@ -523,6 +539,8 @@ function showMeTheMoney(){
   else{
     sleep(1200).then(() => {
       document.getElementById("showMeTheMoney").style.visibility = "visible";
+      document.getElementById("share").style.visibility = "visible";
+      document.getElementById("prev4").style.visibility = "visible";
     });
     
   }

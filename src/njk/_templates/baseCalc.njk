@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="{{ relative_path }}css/calc.css">
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+    <script src="https://kit.fontawesome.com/eb296c83a4.js" crossorigin="anonymous"></script>
   </head>
   <body>
     {% block content %}{% endblock %}
@@ -23,11 +23,52 @@
     <script src="{{ relative_path }}js/bootstrap.js"></script>
     <script src="{{ relative_path }}js/scripts.js"></script>
     <script src="js/quizStyle.js"></script> 
-    <script src="js/html2canvas.js"></script> 
+    <script src="js/html2canvas.min.js"></script> 
     <script>
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-      document.body.appendChild(canvas)
-  });
+
+      $(".share").click(function(){
+   
+      /* html2canvas($('#capture'),
+        {
+          onrendered: function (canvas){
+            var a = document.createElement('a');
+            a.href = canvas.toDataURL('image/png');
+            a.download = 'file.png';
+            a.click();
+          }
+  
+
+        window.scrollTo(0,0);
+        html2canvas(document.querySelector("#capture")).then(canvas => {
+
+        
+        var image = canvas.toDataURL('image/png').replace('image/png', 'octet-stream');
+        console.log(image);
+        window.location.href=image;
+
+          var img = canvas.toDataURL('img/jpg')
+          var iframe = '<iframe src="' + img + '" frameborder="0" style="border:0; top:100px; left:100px; bottom:0px; right:100px; width:100%; height:100%;" allowfullscreen></iframe>'
+          var x = window.open();
+          x.document.open();
+          x.document.write(iframe);
+          x.document.close();
+
+       });
+
+            
+        */
+
+
+          var url = "countingthreadscalculator.com";
+          var text = "I just found out how my fashion habits hurt the world :~( Check out your impact here:";
+          window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      
+
+ 
+
+      });
+
+      
   </script>
   </body>
 </html>

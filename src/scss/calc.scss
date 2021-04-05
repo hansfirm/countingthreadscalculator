@@ -173,22 +173,22 @@
   }
   
   #progressbar #welcome:before {
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1ea";
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f544";
   }
   
   #progressbar #questions:before {
     font-family: FontAwesome;
-    content: "\f1ec"
+    content: "\f128"
   }
   
   #progressbar #calculate:before {
     font-family: FontAwesome;
-    content: "\f030";
+    content: "\f1ec"
   }
   
   #progressbar #results:before {
     font-family: FontAwesome;
-    content: "\f00c";
+    content: "\f70e";
   }
   
   #progressbar li:before {
@@ -349,6 +349,9 @@
     color: red;
   }
   
+  #share, #prev4{
+    visibility: hidden;
+  }
   
   
   }
@@ -527,22 +530,22 @@ p.introFF {
 }
 
 #progressbar #welcome:before {
-  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1ea";
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f544";
 }
 
 #progressbar #questions:before {
   font-family: FontAwesome;
-  content: "\f1ec"
+  content: "\f128"
 }
 
 #progressbar #calculate:before {
   font-family: FontAwesome;
-  content: "\f030";
+  content: "\f1ec"
 }
 
 #progressbar #results:before {
   font-family: FontAwesome;
-  content: "\f00c";
+  content: "\f70e";
 }
 
 #progressbar li:before {
@@ -702,6 +705,11 @@ top: 0.8vw;
   display: block;
   color: red;
 }
+
+#share, #prev4{
+  visibility: hidden;
+}
+
 
 
 
@@ -908,23 +916,22 @@ top: 0.8vw;
   }
   
   #progressbar #welcome:before {
-    font-family: FontAwesome;
-    content: "\f13e"
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f544";
   }
   
   #progressbar #questions:before {
     font-family: FontAwesome;
-    content: "\f007"
+    content: "\f128"
   }
   
   #progressbar #calculate:before {
     font-family: FontAwesome;
-    content: "\f030"
+    content: "\f1ec"
   }
   
   #progressbar #results:before {
     font-family: FontAwesome;
-    content: "\f00c"
+    content: "\f70e";
   }
   
   #progressbar li:before {
@@ -1087,6 +1094,7 @@ top: 0.8vw;
 
 #share, #prev4{
   transform: translateX(-8vw);
+  visibility: hidden;
 }
 
 
@@ -1277,23 +1285,22 @@ top: 0.8vw;
   }
   
   #progressbar #welcome:before {
-    font-family: FontAwesome;
-    content: "\f13e"
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f544";
   }
   
   #progressbar #questions:before {
     font-family: FontAwesome;
-    content: "\f007"
+    content: "\f128"
   }
   
   #progressbar #calculate:before {
     font-family: FontAwesome;
-    content: "\f030"
+    content: "\f1ec"
   }
   
   #progressbar #results:before {
     font-family: FontAwesome;
-    content: "\f00c"
+    content: "\f70e";
   }
   
   #progressbar li:before {
@@ -1458,6 +1465,7 @@ input#onlineRange.row, input#donateSellRange.row{
 
     #share, #prev4{
       transform: translateX(-8vw);
+      visibility: hidden;
     }
     
 }

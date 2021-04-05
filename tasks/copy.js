@@ -6,7 +6,8 @@ module.exports = () => {
     'node_modules/popper.js/dist/popper.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
     'src/js/tooly.js',
-    'src/js/quizStyle.js'
+    'src/js/quizStyle.js',
+    'src/js/html2canvas.min.js'
   ])
     .pipe(gulp.dest('./docs/js'))
 };

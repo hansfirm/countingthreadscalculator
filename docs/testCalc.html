@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/calc.css">
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+    <script src="https://kit.fontawesome.com/eb296c83a4.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
 
 
-<div class="container-fluid">
+<div id="capture" class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
@@ -23,12 +23,14 @@
                 <p class="introFF">Fashion Footprint Calculator</p>
                 <form id="msform">
                     <!-- progressbar -->
+                    <div data-html2canvas-ignore="true">
                     <ul id="progressbar">
                         <li class="active" id="welcome"><strong>Welcome</strong></li>
                         <li id="questions"><strong>Questions</strong></li>
                         <li id="calculate"><strong>Calculate</strong></li>
                         <li id="results"><strong>Results</strong></li>
                     </ul>
+                    </div>
                     <br> <!-- fieldsets -->
                     <fieldset>
                         <div class="form-card">
@@ -146,14 +148,14 @@
                         <div id="resultados" class="form-card">
                             <div class="row">
                                 <div class="col-12">
-                                    <div id="capture" style="padding: 10px;" class="results">
+                                    <div class="results">
                                         <h2 class="fs-title" id="treasure"></h2>
                                         <div id="showMeTheMoney">
                                         <img class="resultsPic1" class="image-fluid" src="img/money.PNG" alt="An illustrated stack of money."/>
                                         <p class="hovertron">- Your yearly wardrobe costs an estimated <b>$<span id="yearlyCost"></span></b>.</p>
                                         <p class="hide">This was calculated at a rate of $25 per item + according to the brands you selected</p>
                                         <p>- More than <b><span id="workers"></span> different garment workers</b> make the clothes you buy every year, but an estimated <b><span id="underpaidWorkers"></span></b> those workers are not paid a living wage.</p>
-                                        <p>- With all the money you spend every year, you could purchase approximately <b><span id="smallBiz"></span> articles of sustainable clothing</b> instead – while simultaneously supporting smaller businesses!</p>
+                                        <p>- With all the money you spend every year, you could purchase approximately <b><span id="smallBiz"></span> <span id="articleVerbage"></span> of sustainable clothing</b> instead – while simultaneously supporting smaller businesses!</p>
                                         
                                         <h2 class="fs-title">But that's just the economic side of it...</h2>
                                         <img class="resultsPic2" class="image-fluid" src="img/cow.PNG" alt="An illustrated bovine."/>
@@ -179,7 +181,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> <input type="button" id="share" name="share" class="share action-button" value="Share" /> <input type="button" id="prev4" name="previous" class="previous action-button-previous" value="Previous" />
+                        </div> <div data-html2canvas-ignore="true"><input type="button" id="share" name="share" class="share action-button" value="Share" /> <input type="button" id="prev4" name="previous" class="previous action-button-previous" value="Previous" />
+                                </div>  
                     </fieldset>
                 </form>
             </div>
@@ -224,11 +227,52 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/quizStyle.js"></script> 
-    <script src="js/html2canvas.js"></script> 
+    <script src="js/html2canvas.min.js"></script> 
     <script>
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-      document.body.appendChild(canvas)
-  });
+
+      $(".share").click(function(){
+   
+      /* html2canvas($('#capture'),
+        {
+          onrendered: function (canvas){
+            var a = document.createElement('a');
+            a.href = canvas.toDataURL('image/png');
+            a.download = 'file.png';
+            a.click();
+          }
+  
+
+        window.scrollTo(0,0);
+        html2canvas(document.querySelector("#capture")).then(canvas => {
+
+        
+        var image = canvas.toDataURL('image/png').replace('image/png', 'octet-stream');
+        console.log(image);
+        window.location.href=image;
+
+          var img = canvas.toDataURL('img/jpg')
+          var iframe = '<iframe src="' + img + '" frameborder="0" style="border:0; top:100px; left:100px; bottom:0px; right:100px; width:100%; height:100%;" allowfullscreen></iframe>'
+          var x = window.open();
+          x.document.open();
+          x.document.write(iframe);
+          x.document.close();
+
+       });
+
+            
+        */
+
+
+          var url = "countingthreadscalculator.com";
+          var text = "I just found out how my fashion habits hurt the world :~( Check out your impact here:";
+          window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      
+
+ 
+
+      });
+
+      
   </script>
   </body>
 </html>
