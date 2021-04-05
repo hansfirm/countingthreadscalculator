@@ -15,6 +15,7 @@ function addCommas(nStr)
 
 
 var youngNudy=0;
+var thugger = 0;
 
 ///TOOLY
 var questionNumber = 1
@@ -490,7 +491,62 @@ function myFunction6(){
 
 });
 
+$("#next1").click(function(){
 
+  current_fs = $(this).parent();
+  next_fs = $(this).parent().next();
+  
+  //Add Class Active
+  $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+  
+  //show the next fieldset
+  next_fs.show();
+  //hide the current fieldset with style
+  current_fs.animate({opacity: 0}, {
+  step: function(now) {
+  // for making fielset appear animation
+  opacity = 1 - now;
+  
+  current_fs.css({
+  'display': 'none',
+  'position': 'relative'
+  });
+  next_fs.css({'opacity': opacity});
+  },
+  duration: 500
+  });
+  setProgressBar(++current);
+
+
+  
+  thuggerTxt='Answer the questions:';
+  typeWriterQuestions();
+
+  function typeWriterQuestions() {
+    console.log(thugger);
+    if (thugger < thuggerTxt.length) {
+      document.getElementById("turnMeUp").innerHTML += thuggerTxt.charAt(thugger);
+      thugger++;
+      setTimeout(typeWriterQuestions, speed6);
+    }
+    turnMeUp();
+  }
+function turnMeUp(){
+  if (thugger <= 20){
+      console.log('Not yet.')
+  }
+  else{
+    sleep(1200).then(() => {
+      document.getElementById("questionsAppear").style.visibility = "visible";
+      document.getElementById("next2").style.visibility = "visible";
+      document.getElementById("prev2").style.visibility = "visible";
+    });
+    
+  }
+};
+
+
+  });
 
 $(".next3").click(function(){
 

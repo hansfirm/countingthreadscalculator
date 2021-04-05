@@ -46,8 +46,8 @@
                             <div class="row">
                                 <div id="preguntas" class="col-12">
                                     
-                                    <h2 class="fs-title">Answer the questions:</h2>
-                                    
+                                    <h2 id="turnMeUp" class="fs-title"></h2>
+                                    <div id='questionsAppear'>
                                     <p class='row'>1. How often do you buy new clothes?</p>
                                         <select name = "dropdown" class ='row' id="freq" onInput="" value="0">
                                             <option value = "8008">--Select--</option>
@@ -126,7 +126,7 @@
                                             <option value = "5">5</option>
                                             <option value = "6">6</option>
                                         </select>
-
+                                        </div>
                                 </div>
                             </div> 
                         </div> <input type="button" id="next2" name="next" class="next2 action-button" value="Next" /> <input type="button" id="prev2" name="previous" class="previous action-button-previous" value="Previous" />
@@ -153,7 +153,6 @@
                                         <div id="showMeTheMoney">
                                         <img class="resultsPic1" class="image-fluid" src="img/money.PNG" alt="An illustrated stack of money."/>
                                         <p class="hovertron">- Your yearly wardrobe costs an estimated <b>$<span id="yearlyCost"></span></b>.</p>
-                                        <p class="hide">This was calculated at a rate of $25 per item + according to the brands you selected</p>
                                         <p>- More than <b><span id="workers"></span> different garment workers</b> make the clothes you buy every year, but an estimated <b><span id="underpaidWorkers"></span></b> those workers are not paid a living wage.</p>
                                         <p>- With all the money you spend every year, you could purchase approximately <b><span id="smallBiz"></span> <span id="articleVerbage"></span> of sustainable clothing</b> instead – while simultaneously supporting smaller businesses!</p>
                                         
@@ -181,8 +180,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> <div data-html2canvas-ignore="true"><input type="button" id="share" name="share" class="share action-button" value="Share" /> <input type="button" id="prev4" name="previous" class="previous action-button-previous" value="Previous" />
-                                </div>  
+                        </div> <input type="button" id="share" name="share" class="share action-button" value="Share" /> <input type="button" id="prev4" name="previous" class="previous action-button-previous" value="Previous" />
                     </fieldset>
                 </form>
             </div>
