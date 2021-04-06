@@ -1,3 +1,16 @@
+var opacity = 0;
+var intervalID = 0;
+var opacity2 = 0;
+var intervalID2 = 0;
+var opacity3 = 0;
+var intervalID3 = 0;
+var opacity4 = 0;
+var intervalID4 = 0;
+var opacity5 = 0;
+var intervalID5 = 0;
+var opacity6 = 0;
+var intervalID6 = 0;
+
 
 
 function addCommas(nStr)
@@ -536,14 +549,54 @@ function turnMeUp(){
       console.log('Not yet.')
   }
   else{
-    sleep(1200).then(() => {
-      document.getElementById("questionsAppear").style.visibility = "visible";
-      document.getElementById("next2").style.visibility = "visible";
-      document.getElementById("prev2").style.visibility = "visible";
+    sleep(800).then(() => {
+    fadeIn2();
     });
     
   }
 };
+
+function fadeIn2() {
+  setInterval(show2, 200);
+}
+
+function show2() {
+  var body4 = document.getElementById("prev2");
+  opacity4 = Number(window.getComputedStyle(body4)
+                   .getPropertyValue("opacity"));
+  if (opacity4 < 1) {
+      opacity4 = opacity4 + 0.1;
+      body4.style.opacity = opacity4
+  } else {
+      clearInterval(intervalID4);
+  }
+
+  var body5 = document.getElementById("next2");
+  opacity2 = Number(window.getComputedStyle(body5)
+                   .getPropertyValue("opacity"));
+  if (opacity5 < 1) {
+      opacity5 = opacity5 + 0.1;
+      body5.style.opacity = opacity5
+  } else {
+      clearInterval(intervalID5);
+  }
+
+  var body6 = document.getElementById("questionsAppear");
+  opacity6 = Number(window.getComputedStyle(body6)
+                   .getPropertyValue("opacity"));
+  if (opacity6 < 1) {
+      opacity6 = opacity6 + 0.1;
+      body6.style.opacity = opacity6
+  } else {
+      clearInterval(intervalID6);
+  }
+
+
+
+}
+
+
+
 
 
   });
@@ -593,14 +646,52 @@ function showMeTheMoney(){
       console.log('Not yet.')
   }
   else{
-    sleep(1200).then(() => {
-      document.getElementById("showMeTheMoney").style.visibility = "visible";
-      document.getElementById("share").style.visibility = "visible";
-      document.getElementById("prev4").style.visibility = "visible";
+    sleep(800).then(() => {
+      fadeIn();
     });
     
   }
 };
+
+
+function fadeIn() {
+    setInterval(show, 200);
+}
+
+function show() {
+    var body = document.getElementById("share");
+    opacity = Number(window.getComputedStyle(body)
+                     .getPropertyValue("opacity"));
+    if (opacity < 1) {
+        opacity = opacity + 0.1;
+        body.style.opacity = opacity
+    } else {
+        clearInterval(intervalID);
+    }
+
+    var body2 = document.getElementById("prev4");
+    opacity2 = Number(window.getComputedStyle(body2)
+                     .getPropertyValue("opacity"));
+    if (opacity2 < 1) {
+        opacity2 = opacity2 + 0.1;
+        body2.style.opacity = opacity2
+    } else {
+        clearInterval(intervalID2);
+    }
+
+    var body3 = document.getElementById("showMeTheMoney");
+    opacity3 = Number(window.getComputedStyle(body3)
+                     .getPropertyValue("opacity"));
+    if (opacity3 < 1) {
+        opacity3 = opacity3 + 0.1;
+        body3.style.opacity = opacity3
+    } else {
+        clearInterval(intervalID3);
+    }
+
+
+
+}
 
 
   });

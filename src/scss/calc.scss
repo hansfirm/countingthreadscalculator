@@ -336,23 +336,23 @@
    }
   
    #showMeTheMoney{
-    visibility:hidden;
+    opacity: 0;
   }
 
 
   #share, #prev4{
-    visibility: hidden;
+    opacity: 0;
   }
 
 
   #questionsAppear{
-    visibility:hidden;
+    opacity: 0;
   }
   
   
  
   #next2, #prev2{
-    visibility: hidden;
+    opacity: 0;
   }
   
   
@@ -696,23 +696,23 @@ top: 0.8vw;
  }
 
  #showMeTheMoney{
-  visibility:hidden;
+  opacity: 0;
 }
 
 
 
 #share, #prev4{
-  visibility: hidden;
+  opacity: 0;
 }
 
 #questionsAppear{
-  visibility:hidden;
+  opacity: 0;
 }
 
 
 
 #next2, #prev2{
-  visibility: hidden;
+  opacity: 0;
 }
 
 
@@ -1074,7 +1074,7 @@ top: 0.8vw;
 }
 
 #showMeTheMoney{
-  visibility:hidden;
+  opacity: 0;
 }
 
 
@@ -1098,17 +1098,17 @@ top: 0.8vw;
 
 #share, #prev4{
   transform: translateX(-8vw);
-  visibility: hidden;
+  opacity: 0;
 }
 
 #questionsAppear{
-  visibility:hidden;
+  opacity: 0;
 }
 
 
 
 #next2, #prev2{
-  visibility: hidden;
+  opacity: 0;
 }
 
 
@@ -1454,7 +1454,7 @@ input#onlineRange.row, input#donateSellRange.row{
     }
 
     #showMeTheMoney{
-      visibility:hidden;
+      opacity: 0;
     }
 
 
@@ -1478,18 +1478,18 @@ input#onlineRange.row, input#donateSellRange.row{
 
     #share, #prev4{
       transform: translateX(-8vw);
-      visibility: hidden;
+      opacity: 0;
     }
     
 
     #questionsAppear{
-      visibility:hidden;
+      opacity: 0;
     }
     
     
    
     #next2, #prev2{
-      visibility: hidden;
+      opacity: 0;
     }
     
 }
