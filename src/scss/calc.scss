@@ -308,6 +308,7 @@
   position: absolute;
   right: 9vw;
   top: 0vw;
+  transform: translateY(-2vw);
   }
   
   
@@ -663,11 +664,12 @@ input#onlineRange.row, input#donateSellRange.row{
 
 .resultsPic1{
 
-width: 7vw;
-height: 7vw;
+width: 5.5vw;
+height: 5.5vw;
 position: absolute;
 right: 9vw;
-top: 0.8vw;
+top: 0vw;
+transform: translateY(-0.5vw);
 }
 
 
@@ -1042,7 +1044,8 @@ top: 0.8vw;
     height: 7vw;
     position: absolute;
     right: 6vw;
-    top: 5vw;
+    top: 0vw;
+    transform: translateY(-1vw);
     }
     
   
@@ -1421,7 +1424,7 @@ input#onlineRange.row, input#donateSellRange.row{
   height: 7vw;
   position: absolute;
   right: 2vw;
-  top: 9vw;
+  top: 2vw;
   }
   
   
@@ -1431,7 +1434,7 @@ input#onlineRange.row, input#donateSellRange.row{
     height: 7.5vw;
     position: absolute;
     right: 0vw;
-    transform: translateY(-5vw);
+    transform: translateY(-6vw);
     }
     
     

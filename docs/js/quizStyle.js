@@ -254,7 +254,7 @@ function outputEverything() {
 
     var cost = (freq*25)*brandRatio;
     var sellReimbursement = (sell*.01)*(cost)*(0.09);
-    var yearlyCost = cost - sellReimbursement + washCost + dryCost;
+    //var yearlyCost = cost - sellReimbursement + washCost + dryCost;
     var workers = freq*4;
     var underpaidWorkers = workers*0.93;
     var smallBiz = freq/1.5;
@@ -264,7 +264,7 @@ function outputEverything() {
     var animalsUsed = (freq*used)/totalAn;
     var animalsKilled = (freq*killed)/totalAn;
     var animalsHurt = Math.round(animalsUsed) + Math.round(animalsKilled) +1;
-    document.getElementById("yearlyCost").innerHTML = addCommas(Math.round(yearlyCost));
+    //document.getElementById("yearlyCost").innerHTML = addCommas(Math.round(yearlyCost));
     document.getElementById("workers").innerHTML = workers;
     document.getElementById("underpaidWorkers").innerHTML = addCommas(Math.round(underpaidWorkers));
     document.getElementById("smallBiz").innerHTML = addCommas(Math.round(smallBiz));
