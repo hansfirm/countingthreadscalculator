@@ -428,7 +428,7 @@ function myFunction2() {
   
   console.log(qt);
 
-  if (qt >= 17){
+  if (qt >= 12){
 
   if (dog < textothy2.length) {
     document.getElementById("demo2").innerHTML += textothy2.charAt(dog);
@@ -766,7 +766,7 @@ var textothy2 = 'Finding fashion industry facts...';
 var textothy3 = 'Plugging in your fashion habits...';
 var textothy4 = 'Crunching the numbers...';
 var textothy5 = 'Ready for your results?';
-var speed = 40; /* The speed/duration of the effect in milliseconds */
+var speed = 30; /* The speed/duration of the effect in milliseconds */
 var speed1 = 45;
 var speed2 = 90;
 var speed3 = 160;

@@ -34,6 +34,11 @@
   }
   
   .button{padding:1rem 1.8rem;background:#000;-webkit-box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);border-radius:10px;font-weight:500;color:#fff;font-family:'Gill Sans';margin:1rem;font-size:1.3rem; margin-top: 10vw;}
+
+  .button{
+    z-index: 1;
+    position:relative;
+  }
   
   #clothesRack{
    max-height: 100%;
@@ -162,6 +167,11 @@
     }
     
     .button{padding:1rem 1.8rem;background:#000;-webkit-box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);border-radius:10px;font-weight:500;color:#fff;font-family:'Gill Sans';margin:1rem;font-size:1.3rem; margin-top: 6vw;}
+
+    .button{
+      z-index: 1;
+      position:relative;
+    }
     
     #clothesRack{
      max-height: 100%;
@@ -292,6 +302,11 @@ font-size: 6vw;
 
 .button{padding:1rem 1.8rem;background:#000;-webkit-box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);border-radius:10px;font-weight:500;color:#fff;font-family:'Gill Sans';margin:1rem;font-size:1.3rem; margin-top: 6vw;}
 
+.button{
+  z-index: 1;
+  position:relative;
+}
+
 #clothesRack{
  max-height: 100%;
  max-width: 100%;
@@ -420,6 +435,12 @@ a, p, img{
  
  .button{padding:1rem 1.8rem;background:#000;-webkit-box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);border-radius:10px;font-weight:500;color:#fff;font-family:'Gill Sans';margin:1rem;font-size:1.3rem; margin-top: 5%;}
  
+ .button{
+  z-index: 1;
+  position:relative;
+}
+
+
  #clothesRack{
    max-height: 100%;
    max-width: 100%;
@@ -546,6 +567,11 @@ a, p, img{
  }
  
  .button{padding:1rem 1.8rem;background:#000;-webkit-box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);box-shadow:0 8px 32px 0 rgba(0,0,0,0.35);border-radius:10px;font-weight:500;color:#fff;font-family:'Gill Sans';margin:1rem;font-size:1.3rem; margin-top: 2.5%;}
+
+ .button{
+  z-index: 1;
+  position:relative;
+ }
  
  #clothesRack{
    max-height: 100%;
@@ -652,6 +678,10 @@ a, p, img{
   .button{
     margin-top: 5vw;
   }
+  .button{
+    z-index: 1;
+    position:relative;
+  }
 }
 
 
@@ -669,7 +699,10 @@ a, p, img{
   .button{
     margin-top: 1.5vw;
   }
-
+  .button{
+    z-index: 1;
+    position:relative;
+  }
 }
 
 
@@ -687,7 +720,10 @@ a, p, img{
   .button{
     margin-top: 1vw;
   }
-
+  .button{
+    z-index: 1;
+    position:relative;
+  }
 }
 
 @media (min-height: 251px) and (max-height: 550px){
@@ -710,6 +746,8 @@ a, p, img{
 
   .button{
     margin-top: 1vw;
+    z-index: 1;
+    position:relative;
   }
 
 }
@@ -735,6 +773,10 @@ a, p, img{
   .button{
     margin-top: 1.5vw;
   }
+  .button{
+    z-index: 1;
+    position:relative;
+  }
 
 }
 
@@ -758,6 +800,11 @@ a, p, img{
 
   .button{
     margin-top: 3vw;
+  }
+
+  .button{
+    z-index: 1;
+    position:relative;
   }
 
   .bottom-right{
@@ -786,6 +833,11 @@ a, p, img{
   margin-top: 10vw;
 }
 
+.button{
+  z-index: 1;
+  position:relative;
+}
+
 }
 
 
@@ -810,6 +862,11 @@ a, p, img{
   margin-top: 10vw;
 }
 
+.button{
+  z-index: 1;
+  position:relative;
+}
+
 }
 
 
@@ -832,6 +889,11 @@ a, p, img{
   
   .button{
     margin-top: 15vw;
+  }
+
+  .button{
+    z-index: 1;
+    position:relative;
   }
   
   }
