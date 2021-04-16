@@ -356,7 +356,9 @@
     opacity: 0;
   }
   
-  
+  #linx{
+    color: grey;
+  }
   
   }
 
@@ -717,6 +719,9 @@ transform: translateY(-0.5vw);
   opacity: 0;
 }
 
+#linx{
+  color: grey;
+}
 
 
 }
@@ -1114,6 +1119,11 @@ transform: translateY(-0.5vw);
   opacity: 0;
 }
 
+#linx{
+  color: grey;
+}
+
+
 
 }
 
@@ -1494,6 +1504,11 @@ input#onlineRange.row, input#donateSellRange.row{
     #next2, #prev2{
       opacity: 0;
     }
+
+    #linx{
+      color: grey;
+    }
+    
     
 }
 
