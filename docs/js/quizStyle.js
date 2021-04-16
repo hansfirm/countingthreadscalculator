@@ -772,7 +772,7 @@ var speed2 = 90;
 var speed3 = 160;
 var speed4 = 300;
 var speed5 = 400;
-var speed6 = 75;
+var speed6 = 60;
 
 
 
