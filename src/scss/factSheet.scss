@@ -2,7 +2,11 @@
   font-family: "Gill Sans";
 }
 
-#aesthetics{
+.container{
+  display: flex;
+}
+
+.col-4{
 background-color: #8fd9be;
 }
 
@@ -21,4 +25,17 @@ background-color: #8fd9be;
   margin-bottom: 15px;
   font-weight: normal;
   text-align: left
+}
+
+p{
+  color: grey;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
