@@ -557,7 +557,7 @@ function turnMeUp(){
 };
 
 function fadeIn2() {
-  setInterval(show2, 200);
+  setInterval(show2, 150);
 }
 
 function show2() {
@@ -646,7 +646,7 @@ function showMeTheMoney(){
       console.log('Not yet.')
   }
   else{
-    sleep(800).then(() => {
+    sleep(450).then(() => {
       fadeIn();
     });
     
@@ -655,7 +655,7 @@ function showMeTheMoney(){
 
 
 function fadeIn() {
-    setInterval(show, 200);
+    setInterval(show, 150);
 }
 
 function show() {

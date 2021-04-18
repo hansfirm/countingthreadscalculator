@@ -358,6 +358,25 @@
   
   #linx{
     color: grey;
+    text-decoration: none;
+  }
+
+  #linx:hover{
+    text-decoration: underline;
+  }
+
+  #melody{
+    color: grey;
+    text-decoration: none;
+  }
+
+
+  #melody + #treasure{
+    display: inline-block;
+  }
+
+  #melody:hover{
+    text-decoration: underline;
   }
   
   }
@@ -721,8 +740,25 @@ transform: translateY(-0.5vw);
 
 #linx{
   color: grey;
+  text-decoration: none;
 }
 
+#linx:hover{
+  text-decoration: underline;
+}
+
+#melody{
+  color: grey;
+  text-decoration: none;
+}
+
+#melody + #treasure{
+  display: inline-block;
+}
+
+#melody:hover{
+  text-decoration: underline;
+}
 
 }
 
@@ -1114,16 +1150,31 @@ transform: translateY(-0.5vw);
 }
 
 
-
 #next2, #prev2{
   opacity: 0;
 }
 
 #linx{
   color: grey;
+  text-decoration: none;
 }
 
+#linx:hover{
+  text-decoration: underline;
+}
 
+#melody{
+  color: grey;
+  text-decoration: none;
+}
+
+#melody + #treasure{
+  display: inline-block;
+}
+
+#melody:hover{
+  text-decoration: underline;
+}
 
 }
 
@@ -1507,8 +1558,26 @@ input#onlineRange.row, input#donateSellRange.row{
 
     #linx{
       color: grey;
+      text-decoration: none;
     }
-    
+
+    #linx:hover{
+      text-decoration: underline;
+    }
+
+    #melody{
+      color: grey;
+      text-decoration: none;
+  
+    }
+
+    #melody + #treasure{
+      display: inline-block;
+    }
+
+    #melody:hover{
+      text-decoration: underline;
+    }
     
 }
 
