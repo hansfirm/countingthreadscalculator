@@ -28,41 +28,24 @@
 
       $(".share").click(function(){
    
-      /* html2canvas($('#capture'),
-        {
-          onrendered: function (canvas){
-            var a = document.createElement('a');
-            a.href = canvas.toDataURL('image/png');
-            a.download = 'file.png';
-            a.click();
-          }
-  
 
         window.scrollTo(0,0);
         html2canvas(document.querySelector("#capture")).then(canvas => {
 
         
-        var image = canvas.toDataURL('image/png').replace('image/png', 'octet-stream');
+        var image = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream');
         console.log(image);
         window.location.href=image;
-
-          var img = canvas.toDataURL('img/jpg')
-          var iframe = '<iframe src="' + img + '" frameborder="0" style="border:0; top:100px; left:100px; bottom:0px; right:100px; width:100%; height:100%;" allowfullscreen></iframe>'
-          var x = window.open();
-          x.document.open();
-          x.document.write(iframe);
-          x.document.close();
 
        });
 
             
-        */
+      
 
-
-          var url = "countingthreadscalculator.com";
+      /*    var url = "countingthreadscalculator.com";
           var text = "I just found out how my fashion habits hurt the world :~( Check out your impact here:";
           window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
-      
+      */
 
  
 

@@ -14,10 +14,11 @@
   <body>
     
 
+<!--  class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2" -->
 
 <div id="capture" class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+        <div class="col-md-10">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                 <a href="countingthreads.com"><h2 id="heading">Counting Threads</h2></a>
                 <p class="introFF">Fashion Footprint Calculator</p>
@@ -34,11 +35,11 @@
                     <br> <!-- fieldsets -->
                     <fieldset>
                         <div class="form-card">
-                            <div class="row">
-                                <div class="col-12">
+                            <!--<div class="row">
+                                <div class="col-12"> -->
                                     <p class="introMan1" id="demo"></p>
-                                </div>
-                            </div>
+                             <!--  </div>
+                            </div> -->
                         </div> <input type="button" id='next1' name="next" class="next action-button" value="Next" />
                     </fieldset>
                     <fieldset>
@@ -178,11 +179,13 @@
                                         <p>All that Co2 is equivalent to <b><span id="roadTrips"></span> <span id="roadTripsVerbage"></span></b> from Austin to Dallas and back...</p>
                                         <p>You could convert all that water into <b><span id="showers"></span> showers...</b></p>
 
+                                    <div data-html2canvas-ignore="true">
                                         <h2 class="fs-title">Want to try again?</h2>
                                         <p>Click <b><a id="linx" href="./bot.html"></span>here</a></b> to give it another go.</p>
 
                                         <h2 class="fs-title">Inspired to make a change?</h2>
                                         <p>Visit <b><a id="linx" href="countingthreads.com/GetInvolved"></span>Counting Threads</a></b> for ways to reduce your footprint, resources, places to donate, petitions, volunteer opportunities, and sustainable clothing options.</p>
+                                    </div>
 
                                         </div>
                                     </div>
@@ -238,41 +241,24 @@
 
       $(".share").click(function(){
    
-      /* html2canvas($('#capture'),
-        {
-          onrendered: function (canvas){
-            var a = document.createElement('a');
-            a.href = canvas.toDataURL('image/png');
-            a.download = 'file.png';
-            a.click();
-          }
-  
 
         window.scrollTo(0,0);
         html2canvas(document.querySelector("#capture")).then(canvas => {
 
         
-        var image = canvas.toDataURL('image/png').replace('image/png', 'octet-stream');
+        var image = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream');
         console.log(image);
         window.location.href=image;
-
-          var img = canvas.toDataURL('img/jpg')
-          var iframe = '<iframe src="' + img + '" frameborder="0" style="border:0; top:100px; left:100px; bottom:0px; right:100px; width:100%; height:100%;" allowfullscreen></iframe>'
-          var x = window.open();
-          x.document.open();
-          x.document.write(iframe);
-          x.document.close();
 
        });
 
             
-        */
+      
 
-
-          var url = "countingthreadscalculator.com";
+      /*    var url = "countingthreadscalculator.com";
           var text = "I just found out how my fashion habits hurt the world :~( Check out your impact here:";
           window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
-      
+      */
 
  
 

@@ -129,14 +129,6 @@
    font-size: 8vw;
    margin-left: 4vw;
   }
-
-  #creditos {
-    text-decoration: none;
-  }
-
-  #creditos:hover{
-    text-decoration: underline;
-  }
   
   }
 
@@ -270,16 +262,8 @@
      font-size: 3vw;
      margin-left: 5vw;
     }
-
-    #creditos {
-      text-decoration: none;
-    }
-  
-    #creditos:hover{
-      text-decoration: underline;
-    }
     
-}
+    }
 
 
 @media (min-width: 781px) and (max-width: 900px) {
@@ -411,14 +395,6 @@ a, p, img{
  color: black;
  font-size: 3vw;
  margin-left: 5vw;
-}
-
-#creditos {
-  text-decoration: none;
-}
-
-#creditos:hover{
-  text-decoration: underline;
 }
 
 }
@@ -554,15 +530,6 @@ a, p, img{
    font-size: 1rem;
    margin-left: 5vw;
  }
-
- #creditos {
-  text-decoration: none;
-}
-
-#creditos:hover{
-  text-decoration: underline;
-}
-
 }
 
 @media (min-width: 1316px) and (max-width: 3000px) {
@@ -695,15 +662,6 @@ a, p, img{
    font-size: 1rem;
    margin-left: 5.5vw;
  }
-
- #creditos {
-  text-decoration: none;
-}
-
-#creditos:hover{
-  text-decoration: underline;
-}
-
 }
 
 @media (min-height: 551px) and (max-height: 700px){
@@ -724,15 +682,6 @@ a, p, img{
     z-index: 1;
     position:relative;
   }
-
-  #creditos {
-    text-decoration: none;
-  }
-
-  #creditos:hover{
-    text-decoration: underline;
-  }
-
 }
 
 
@@ -754,15 +703,6 @@ a, p, img{
     z-index: 1;
     position:relative;
   }
-
-  #creditos {
-    text-decoration: none;
-  }
-
-  #creditos:hover{
-    text-decoration: underline;
-  }
-
 }
 
 
@@ -784,15 +724,6 @@ a, p, img{
     z-index: 1;
     position:relative;
   }
-
-  #creditos {
-    text-decoration: none;
-  }
-
-  #creditos:hover{
-    text-decoration: underline;
-  }
-
 }
 
 @media (min-height: 251px) and (max-height: 550px){
@@ -802,29 +733,21 @@ a, p, img{
     padding: 0vw;
     margin-left:0;
     margin-right: 0;
-    margin-top: 3vw;
+    margin-top: 0.4vw;
     margin-bottom: 0vw;
     font-size: 5vw;
     max-height: 6vw;
   }
 
   .subHead{
-    margin-top: 3vw;
+    margin-top: 0.4vw;
     font-size: 2.5vw;
   }
 
   .button{
-    margin-top: 3vw;
+    margin-top: 1vw;
     z-index: 1;
     position:relative;
-  }
-
-  #creditos {
-    text-decoration: none;
-  }
-
-  #creditos:hover{
-    text-decoration: underline;
   }
 
 }
@@ -855,14 +778,6 @@ a, p, img{
     position:relative;
   }
 
-  #creditos {
-    text-decoration: none;
-  }
-
-  #creditos:hover{
-    text-decoration: underline;
-  }
-
 }
 
 @media (min-height: 251px) and (max-height: 550px) and (min-width: 690px) {
@@ -871,15 +786,16 @@ a, p, img{
     padding: 0vw;
     margin-left:0;
     margin-right: 0;
-    margin-top: 1vw;
+    margin-top: 0vw;
     margin-bottom: 0vw;
-    font-size: 4vw;
+    font-size: 3vw;
     max-height: 2vw;
   }
 
   .subHead{
-    margin-top: 4vw;
-    font-size: 2vw;
+    margin-top: 0vw;
+    font-size: 0vw;
+    color: white;
   }
 
   .button{
@@ -893,14 +809,6 @@ a, p, img{
 
   .bottom-right{
     margin-right: 9vw;
-  }
-
-  #creditos {
-    text-decoration: none;
-  }
-
-  #creditos:hover{
-    text-decoration: underline;
   }
 
 }
@@ -928,14 +836,6 @@ a, p, img{
 .button{
   z-index: 1;
   position:relative;
-}
-
-#creditos {
-  text-decoration: none;
-}
-
-#creditos:hover{
-  text-decoration: underline;
 }
 
 }
@@ -967,14 +867,6 @@ a, p, img{
   position:relative;
 }
 
-#creditos {
-  text-decoration: none;
-}
-
-#creditos:hover{
-  text-decoration: underline;
-}
-
 }
 
 
@@ -1003,147 +895,5 @@ a, p, img{
     z-index: 1;
     position:relative;
   }
-
-  #creditos {
-    text-decoration: none;
-  }
-
-  #creditos:hover{
-    text-decoration: underline;
-  }
-  
-  }
-
-  @media (max-height: 249px){
-
-  
-    .head{
-      padding: 0vw;
-      margin-left:0;
-      margin-right: 0;
-      margin-top: 3vw;
-      margin-bottom: 0vw;
-      font-size: 4vw;
-      max-height: 6vw;
-    }
-  
-    .subHead{
-      margin-top: 0.5vw;
-      font-size: 2vw;
-    }
-  
-    .button{
-      margin-top: 2vw;
-      z-index: 1;
-      position:relative;
-    }
-
-    #creditos {
-      text-decoration: none;
-    }
-  
-    #creditos:hover{
-      text-decoration: underline;
-    }
-  
-  }
-
-
-  @media (height: 640px) and (width: 360px){
-
-  
-    .head{
-      padding: 0vw;
-      margin-left:0;
-      margin-right: 0;
-      margin-top: 11vw;
-      margin-bottom: 0vw;
-      font-size: 11vw;
-    }
-  
-    .subHead{
-      margin-top: 3vw;
-      font-size: 5vw;
-    }
-  
-    .button{
-      margin-top: 7vw;
-      z-index: 1;
-      position:relative;
-    }
-
-    #creditos {
-      text-decoration: none;
-    }
-  
-    #creditos:hover{
-      text-decoration: underline;
-    }
-  
-  }
-
-  @media (height: 568px) and (width: 320px){
-
-  
-    .head{
-      padding: 0vw;
-      margin-left:0;
-      margin-right: 0;
-      margin-top: 15vw;
-      margin-bottom: 0vw;
-      font-size: 11vw;
-    }
-  
-    .subHead{
-      margin-top: 3vw;
-      font-size: 5vw;
-    }
-  
-    .button{
-      margin-top: 7vw;
-      z-index: 1;
-      position:relative;
-    }
-
-    #creditos {
-      text-decoration: none;
-    }
-  
-    #creditos:hover{
-      text-decoration: underline;
-    }
-  
-  }
-
-  @media (height: 653px) and (width: 280px){
-
-  
-    .head{
-      padding: 0vw;
-      margin-left:0;
-      margin-right: 0;
-      margin-top: 24vw;
-      margin-bottom: 0vw;
-      font-size: 12vw;
-    }
-  
-    .subHead{
-      margin-top: 6vw;
-      font-size: 6vw;
-    }
-  
-    .button{
-      margin-top: 8vw;
-      z-index: 1;
-      position:relative;
-    }
-
-    #creditos {
-      text-decoration: none;
-    }
-  
-    #creditos:hover{
-      text-decoration: underline;
-    }
   
   }
