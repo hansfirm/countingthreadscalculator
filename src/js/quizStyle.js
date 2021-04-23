@@ -1,3 +1,4 @@
+//set global variables 4 fade-in
 var opacity = 0;
 var intervalID = 0;
 var opacity2 = 0;
@@ -12,7 +13,7 @@ var opacity6 = 0;
 var intervalID6 = 0;
 
 
-
+//add commas to variables
 function addCommas(nStr)
 {
     nStr += '';
@@ -26,11 +27,11 @@ function addCommas(nStr)
     return x1 + x2;
 }
 
-
+//more global variables 4 type effect
 var youngNudy=0;
 var thugger = 0;
 
-///TOOLY
+//global variables for results equations
 var questionNumber = 1
 var wash = 0
 var dry = 0
@@ -39,6 +40,7 @@ var donate = 0
 var cheap = 0
 var expensive = 0
 
+//slider bars
 var slider = document.getElementById("onlineRange");
 var output = document.getElementById("online");
 output.innerHTML = slider.value;
@@ -54,7 +56,7 @@ slider2.oninput = function() {
   output2.innerHTML = this.value;
 }
 
-
+//global variables 4 results
 var freq = 0;
 var regular = 1
 var expensive = 1
@@ -71,6 +73,7 @@ var userFinalEmits = 0;
 var totalElectricity = 0;
 var hospitalHours = 0;
 
+//assigning values from first Q
 $("#freq").on("input",function(){
     freq = Number($(this).val());
     console.log(freq);
@@ -79,7 +82,7 @@ $("#freq").on("input",function(){
 });
 
 
-
+//assigning variables from brands Q
 $("#brands").on("input",function(){
 var regular = 1
 var expensive = 1
@@ -156,7 +159,7 @@ outputEverything();
 });
 
 
-
+//assigning values from slider1
 $("#onlineRange").on("input",function() {
     online = Number($(this).val());
     console.log(online);
@@ -166,7 +169,7 @@ $("#onlineRange").on("input",function() {
 
 
 
-
+//assigning values from slider2
 $("#donateSellRange").on("input",function(){
     sell = Number($(this).val());
     console.log(sell);
@@ -177,7 +180,7 @@ $("#donateSellRange").on("input",function(){
 
 
 
-
+//assigning values from wash Q
 $("#wash").on("input",function(){
     wash = Number($(this).val());
     console.log(wash);
@@ -186,7 +189,7 @@ $("#wash").on("input",function(){
 });
 
 
-
+//assigning values from dry Q
 $("#dry").on("input",function(){
     dry = Number($(this).val());
     console.log(dry);
@@ -194,6 +197,7 @@ $("#dry").on("input",function(){
     outputEverything();
   });
 
+//where the magic happens: all past functions call this function, which uses assigned values in equations to render result values
 function outputEverything() {
     washCost = wash*52*0.25*0.1229
     dryCost = dry*52*2.25*0.1229
@@ -327,7 +331,7 @@ function outputEverything() {
 
 
 
-
+//transitions between fieldsets (i.e., sections of the calculator)
 $(document).ready(function(){
 
   var current_fs, next_fs, previous_fs; //fieldsets
@@ -364,6 +368,7 @@ $(document).ready(function(){
   setProgressBar(++current);
   });
 
+//insures user answers all Q's
   $(".next2").click(function(){
 
 
@@ -410,6 +415,7 @@ setProgressBar(++current);
 
 myFunction();
 
+//text bot ensues
 function myFunction() {
 
   console.log(textothy)
@@ -504,6 +510,7 @@ function myFunction6(){
 
 });
 
+//type bot then fade on Q page
 $("#next1").click(function(){
 
   current_fs = $(this).parent();
@@ -601,6 +608,7 @@ function show2() {
 
   });
 
+//type bot then fade on results
 $(".next3").click(function(){
 
   current_fs = $(this).parent();
@@ -698,7 +706,7 @@ function show() {
 
 
 
-  
+//previous button jargon
   $(".previous").click(function(){
   
   current_fs = $(this).parent();
@@ -743,7 +751,7 @@ function show() {
 
 
 
-  ///translating tooly!
+  //determines time diction
   var horas = new Date().getHours();
 if (horas >= 0 && horas < 12)
     {var relativeTime = "morning";}
@@ -753,7 +761,7 @@ else
     {var relativeTime = "evening";}
 
 
-
+//declares variables necessary for type bot function
 var i = 0;
 var qt =0;
 var dog = 0;
@@ -780,6 +788,7 @@ const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
+//intro slide type bot
 window.onload = function typeWriter() {
   if (i < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(i);
