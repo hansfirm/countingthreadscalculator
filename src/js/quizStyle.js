@@ -485,7 +485,7 @@ myFunction5();
 
 
 function myFunction5(){
-  sleep(7000).then(() => {
+  sleep(6300).then(() => {
     myFunction6();
   });
 }
@@ -783,12 +783,11 @@ var speed5 = 400;
 var speed6 = 60;
 
 
-
 const sleep = (milliseconds) => {
   return new Promise(resolve => setTimeout(resolve, milliseconds))
 }
 
-//intro slide type bot
+//intro slide type
 window.onload = function typeWriter() {
   if (i < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(i);
