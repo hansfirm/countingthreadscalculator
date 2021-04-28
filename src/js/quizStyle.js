@@ -11,6 +11,12 @@ var opacity5 = 0;
 var intervalID5 = 0;
 var opacity6 = 0;
 var intervalID6 = 0;
+var opacity7 = 0;
+var intervalID7 = 0;
+var opacity8 = 0;
+var intervalID8 = 0;
+var opacity9 = 0;
+var intervalID9 = 0;
 
 
 //add commas to variables
@@ -502,7 +508,50 @@ function myFunction6(){
     liger++;
     setTimeout(myFunction6, speed5);
   }
+  fadeIn8();
+  fadeIn9();
 }
+
+
+function fadeIn8() {
+  setInterval(show8, 500);
+}
+
+function show8() {
+  var body8 = document.getElementById("next3");
+  opacity8 = Number(window.getComputedStyle(body8)
+                   .getPropertyValue("opacity"));
+  if (opacity8 < 1) {
+      opacity8 = opacity8 + 0.1;
+      body8.style.opacity = opacity8
+  } 
+  else {
+      clearInterval(intervalID8);
+  }
+}
+
+function fadeIn9() {
+  setInterval(show9, 500);
+}
+
+function show9() {
+  var body9 = document.getElementById("prev3");
+  opacity9 = Number(window.getComputedStyle(body9)
+                   .getPropertyValue("opacity"));
+  if (opacity9 < 1) {
+      opacity9 = opacity9 + 0.1;
+      body9.style.opacity = opacity9
+  } 
+  else {
+      clearInterval(intervalID9);
+  }
+}
+
+
+
+
+
+
 
 }
 
@@ -789,15 +838,42 @@ const sleep = (milliseconds) => {
 
 //intro slide type
 window.onload = function typeWriter() {
+  console.log(i);
   if (i < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
+  poetry();
 }
- 
 
+function poetry() {
+  if (i <= 164) {
+    console.log('Not yet.')
+  }
+  else{
+    sleep(450).then(() => {
+      fadeIn7();
+    });
+  }
+}
 
+function fadeIn7() {
+  setInterval(show7, 150);
+}
+
+function show7() {
+  var body7 = document.getElementById("next1");
+  opacity7 = Number(window.getComputedStyle(body7)
+                   .getPropertyValue("opacity"));
+  if (opacity7 < 1) {
+      opacity7 = opacity7 + 0.1;
+      body7.style.opacity = opacity7
+  } 
+  else {
+      clearInterval(intervalID7);
+  }
+}
 
 
 
