@@ -17,6 +17,7 @@ var opacity8 = 0;
 var intervalID8 = 0;
 var opacity9 = 0;
 var intervalID9 = 0;
+var check = false;
 
 
 //add commas to variables
@@ -749,6 +750,13 @@ function show() {
 
 
 }
+
+/*var check = true;
+if (check == true){
+  alert("Sheesh! You're not gonna like this.");
+  check = false;
+}
+*/
 
 
   });
